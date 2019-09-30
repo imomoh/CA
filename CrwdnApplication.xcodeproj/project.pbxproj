@@ -1,0 +1,708 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		430D2D38231DFF1C005510A2 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430D2D37231DFF1C005510A2 /* CameraViewController.swift */; };
+		432A3E9F233C55C4006A96F0 /* images-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 432A3E9B233C55C4006A96F0 /* images-2.png */; };
+		432A3EA0233C55C4006A96F0 /* images-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 432A3E9C233C55C4006A96F0 /* images-3.png */; };
+		432A3EA1233C55C4006A96F0 /* images.png in Resources */ = {isa = PBXBuildFile; fileRef = 432A3E9D233C55C4006A96F0 /* images.png */; };
+		432A3EA2233C55C4006A96F0 /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 432A3E9E233C55C4006A96F0 /* images.jpeg */; };
+		4372DB2A230F162B00972AB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4372DB29230F162B00972AB8 /* AppDelegate.swift */; };
+		4372DB2C230F162B00972AB8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4372DB2B230F162B00972AB8 /* ViewController.swift */; };
+		4372DB32230F162B00972AB8 /* CrwdnApplication.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4372DB30230F162B00972AB8 /* CrwdnApplication.xcdatamodeld */; };
+		4372DB34230F162C00972AB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4372DB33230F162C00972AB8 /* Assets.xcassets */; };
+		4372DB37230F162C00972AB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4372DB35230F162C00972AB8 /* LaunchScreen.storyboard */; };
+		4372DB42230F162C00972AB8 /* CrwdnApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4372DB41230F162C00972AB8 /* CrwdnApplicationTests.swift */; };
+		4372DB4D230F162C00972AB8 /* CrwdnApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4372DB4C230F162C00972AB8 /* CrwdnApplicationUITests.swift */; };
+		4372DB5B230F166C00972AB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4372DB5A230F166C00972AB8 /* Main.storyboard */; };
+		4372DB5C230F166C00972AB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4372DB5A230F166C00972AB8 /* Main.storyboard */; };
+		4372DB5D230F166C00972AB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4372DB5A230F166C00972AB8 /* Main.storyboard */; };
+		4372DB5F230F168A00972AB8 /* Splash Screen – delete this bruh@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4372DB5E230F168A00972AB8 /* Splash Screen – delete this bruh@3x.png */; };
+		4372DB60230F168A00972AB8 /* Splash Screen – delete this bruh@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4372DB5E230F168A00972AB8 /* Splash Screen – delete this bruh@3x.png */; };
+		4372DB61230F168A00972AB8 /* Splash Screen – delete this bruh@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4372DB5E230F168A00972AB8 /* Splash Screen – delete this bruh@3x.png */; };
+		4372DB63230F16B600972AB8 /* CRWDN NEEDS YOUR LOCATION TO BE A FUNCTIONAL APP@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4372DB62230F16B600972AB8 /* CRWDN NEEDS YOUR LOCATION TO BE A FUNCTIONAL APP@2x.png */; };
+		4372DB64230F16B600972AB8 /* CRWDN NEEDS YOUR LOCATION TO BE A FUNCTIONAL APP@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4372DB62230F16B600972AB8 /* CRWDN NEEDS YOUR LOCATION TO BE A FUNCTIONAL APP@2x.png */; };
+		4372DB65230F16B600972AB8 /* CRWDN NEEDS YOUR LOCATION TO BE A FUNCTIONAL APP@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4372DB62230F16B600972AB8 /* CRWDN NEEDS YOUR LOCATION TO BE A FUNCTIONAL APP@2x.png */; };
+		4372DB67230F16BE00972AB8 /* I WOULD LIKE TO CHANGE MY MIND@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4372DB66230F16BD00972AB8 /* I WOULD LIKE TO CHANGE MY MIND@2x.png */; };
+		4372DB68230F16BE00972AB8 /* I WOULD LIKE TO CHANGE MY MIND@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4372DB66230F16BD00972AB8 /* I WOULD LIKE TO CHANGE MY MIND@2x.png */; };
+		4372DB69230F16BE00972AB8 /* I WOULD LIKE TO CHANGE MY MIND@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4372DB66230F16BD00972AB8 /* I WOULD LIKE TO CHANGE MY MIND@2x.png */; };
+		4372DB6C230F16EF00972AB8 /* button1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4372DB6A230F16EF00972AB8 /* button1.png */; };
+		4372DB6D230F16EF00972AB8 /* button1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4372DB6A230F16EF00972AB8 /* button1.png */; };
+		4372DB6E230F16EF00972AB8 /* button1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4372DB6A230F16EF00972AB8 /* button1.png */; };
+		4372DB6F230F16EF00972AB8 /* button DENY .png in Resources */ = {isa = PBXBuildFile; fileRef = 4372DB6B230F16EF00972AB8 /* button DENY .png */; };
+		4372DB70230F16EF00972AB8 /* button DENY .png in Resources */ = {isa = PBXBuildFile; fileRef = 4372DB6B230F16EF00972AB8 /* button DENY .png */; };
+		4372DB71230F16EF00972AB8 /* button DENY .png in Resources */ = {isa = PBXBuildFile; fileRef = 4372DB6B230F16EF00972AB8 /* button DENY .png */; };
+		4372DB73230F172000972AB8 /* CRWND WILL LIKE TO ACCESS YOU LOCATION@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4372DB72230F172000972AB8 /* CRWND WILL LIKE TO ACCESS YOU LOCATION@2x.png */; };
+		4372DB74230F172000972AB8 /* CRWND WILL LIKE TO ACCESS YOU LOCATION@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4372DB72230F172000972AB8 /* CRWND WILL LIKE TO ACCESS YOU LOCATION@2x.png */; };
+		4372DB75230F172000972AB8 /* CRWND WILL LIKE TO ACCESS YOU LOCATION@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4372DB72230F172000972AB8 /* CRWND WILL LIKE TO ACCESS YOU LOCATION@2x.png */; };
+		4372DB77230F174400972AB8 /* DENY button@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4372DB76230F174300972AB8 /* DENY button@3x.png */; };
+		4372DB78230F174400972AB8 /* DENY button@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4372DB76230F174300972AB8 /* DENY button@3x.png */; };
+		4372DB79230F174400972AB8 /* DENY button@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4372DB76230F174300972AB8 /* DENY button@3x.png */; };
+		4372DB7B230F176000972AB8 /* Rectangle 46@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4372DB7A230F176000972AB8 /* Rectangle 46@3x.png */; };
+		4372DB7C230F176000972AB8 /* Rectangle 46@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4372DB7A230F176000972AB8 /* Rectangle 46@3x.png */; };
+		4372DB7D230F176000972AB8 /* Rectangle 46@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4372DB7A230F176000972AB8 /* Rectangle 46@3x.png */; };
+		4372DB7F230F188F00972AB8 /* Splash Screen – 7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4372DB7E230F188F00972AB8 /* Splash Screen – 7@2x.png */; };
+		4372DB80230F188F00972AB8 /* Splash Screen – 7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4372DB7E230F188F00972AB8 /* Splash Screen – 7@2x.png */; };
+		4372DB81230F188F00972AB8 /* Splash Screen – 7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4372DB7E230F188F00972AB8 /* Splash Screen – 7@2x.png */; };
+		4372DB83230F3F9700972AB8 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4372DB82230F3F9700972AB8 /* PopUpViewController.swift */; };
+		4372DB84230F3F9700972AB8 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4372DB82230F3F9700972AB8 /* PopUpViewController.swift */; };
+		4372DB85230F3F9700972AB8 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4372DB82230F3F9700972AB8 /* PopUpViewController.swift */; };
+		4372DB872310BA6100972AB8 /* Symbol @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4372DB862310BA6100972AB8 /* Symbol @3x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4372DB3E230F162C00972AB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4372DB1E230F162B00972AB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4372DB25230F162B00972AB8;
+			remoteInfo = CrwdnApplication;
+		};
+		4372DB49230F162C00972AB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4372DB1E230F162B00972AB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4372DB25230F162B00972AB8;
+			remoteInfo = CrwdnApplication;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		430D2D37231DFF1C005510A2 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		432A3E9B233C55C4006A96F0 /* images-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "images-2.png"; sourceTree = "<group>"; };
+		432A3E9C233C55C4006A96F0 /* images-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "images-3.png"; sourceTree = "<group>"; };
+		432A3E9D233C55C4006A96F0 /* images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = images.png; sourceTree = "<group>"; };
+		432A3E9E233C55C4006A96F0 /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpeg; sourceTree = "<group>"; };
+		4372DB26230F162B00972AB8 /* CrwdnApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrwdnApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4372DB29230F162B00972AB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4372DB2B230F162B00972AB8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4372DB31230F162B00972AB8 /* CrwdnApplication.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CrwdnApplication.xcdatamodel; sourceTree = "<group>"; };
+		4372DB33230F162C00972AB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4372DB36230F162C00972AB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4372DB38230F162C00972AB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4372DB3D230F162C00972AB8 /* CrwdnApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrwdnApplicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4372DB41230F162C00972AB8 /* CrwdnApplicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrwdnApplicationTests.swift; sourceTree = "<group>"; };
+		4372DB43230F162C00972AB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4372DB48230F162C00972AB8 /* CrwdnApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrwdnApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4372DB4C230F162C00972AB8 /* CrwdnApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrwdnApplicationUITests.swift; sourceTree = "<group>"; };
+		4372DB4E230F162C00972AB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4372DB5A230F166C00972AB8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		4372DB5E230F168A00972AB8 /* Splash Screen – delete this bruh@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Splash Screen – delete this bruh@3x.png"; sourceTree = "<group>"; };
+		4372DB62230F16B600972AB8 /* CRWDN NEEDS YOUR LOCATION TO BE A FUNCTIONAL APP@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CRWDN NEEDS YOUR LOCATION TO BE A FUNCTIONAL APP@2x.png"; sourceTree = "<group>"; };
+		4372DB66230F16BD00972AB8 /* I WOULD LIKE TO CHANGE MY MIND@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "I WOULD LIKE TO CHANGE MY MIND@2x.png"; sourceTree = "<group>"; };
+		4372DB6A230F16EF00972AB8 /* button1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button1.png; sourceTree = "<group>"; };
+		4372DB6B230F16EF00972AB8 /* button DENY .png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button DENY .png"; sourceTree = "<group>"; };
+		4372DB72230F172000972AB8 /* CRWND WILL LIKE TO ACCESS YOU LOCATION@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CRWND WILL LIKE TO ACCESS YOU LOCATION@2x.png"; sourceTree = "<group>"; };
+		4372DB76230F174300972AB8 /* DENY button@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DENY button@3x.png"; sourceTree = "<group>"; };
+		4372DB7A230F176000972AB8 /* Rectangle 46@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle 46@3x.png"; sourceTree = "<group>"; };
+		4372DB7E230F188F00972AB8 /* Splash Screen – 7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Splash Screen – 7@2x.png"; sourceTree = "<group>"; };
+		4372DB82230F3F9700972AB8 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+		4372DB862310BA6100972AB8 /* Symbol @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Symbol @3x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4372DB23230F162B00972AB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4372DB3A230F162C00972AB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4372DB45230F162C00972AB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4372DB1D230F162B00972AB8 = {
+			isa = PBXGroup;
+			children = (
+				4372DB28230F162B00972AB8 /* CrwdnApplication */,
+				4372DB40230F162C00972AB8 /* CrwdnApplicationTests */,
+				4372DB4B230F162C00972AB8 /* CrwdnApplicationUITests */,
+				4372DB27230F162B00972AB8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4372DB27230F162B00972AB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4372DB26230F162B00972AB8 /* CrwdnApplication.app */,
+				4372DB3D230F162C00972AB8 /* CrwdnApplicationTests.xctest */,
+				4372DB48230F162C00972AB8 /* CrwdnApplicationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4372DB28230F162B00972AB8 /* CrwdnApplication */ = {
+			isa = PBXGroup;
+			children = (
+				4372DB29230F162B00972AB8 /* AppDelegate.swift */,
+				4372DB82230F3F9700972AB8 /* PopUpViewController.swift */,
+				4372DB2B230F162B00972AB8 /* ViewController.swift */,
+				430D2D37231DFF1C005510A2 /* CameraViewController.swift */,
+				4372DB5A230F166C00972AB8 /* Main.storyboard */,
+				4372DB33230F162C00972AB8 /* Assets.xcassets */,
+				4372DB35230F162C00972AB8 /* LaunchScreen.storyboard */,
+				4372DB38230F162C00972AB8 /* Info.plist */,
+				4372DB5E230F168A00972AB8 /* Splash Screen – delete this bruh@3x.png */,
+				4372DB66230F16BD00972AB8 /* I WOULD LIKE TO CHANGE MY MIND@2x.png */,
+				4372DB6A230F16EF00972AB8 /* button1.png */,
+				4372DB76230F174300972AB8 /* DENY button@3x.png */,
+				4372DB862310BA6100972AB8 /* Symbol @3x.png */,
+				432A3E9B233C55C4006A96F0 /* images-2.png */,
+				432A3E9C233C55C4006A96F0 /* images-3.png */,
+				432A3E9E233C55C4006A96F0 /* images.jpeg */,
+				432A3E9D233C55C4006A96F0 /* images.png */,
+				4372DB6B230F16EF00972AB8 /* button DENY .png */,
+				4372DB7E230F188F00972AB8 /* Splash Screen – 7@2x.png */,
+				4372DB7A230F176000972AB8 /* Rectangle 46@3x.png */,
+				4372DB72230F172000972AB8 /* CRWND WILL LIKE TO ACCESS YOU LOCATION@2x.png */,
+				4372DB62230F16B600972AB8 /* CRWDN NEEDS YOUR LOCATION TO BE A FUNCTIONAL APP@2x.png */,
+				4372DB30230F162B00972AB8 /* CrwdnApplication.xcdatamodeld */,
+			);
+			path = CrwdnApplication;
+			sourceTree = "<group>";
+		};
+		4372DB40230F162C00972AB8 /* CrwdnApplicationTests */ = {
+			isa = PBXGroup;
+			children = (
+				4372DB41230F162C00972AB8 /* CrwdnApplicationTests.swift */,
+				4372DB43230F162C00972AB8 /* Info.plist */,
+			);
+			path = CrwdnApplicationTests;
+			sourceTree = "<group>";
+		};
+		4372DB4B230F162C00972AB8 /* CrwdnApplicationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4372DB4C230F162C00972AB8 /* CrwdnApplicationUITests.swift */,
+				4372DB4E230F162C00972AB8 /* Info.plist */,
+			);
+			path = CrwdnApplicationUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4372DB25230F162B00972AB8 /* CrwdnApplication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4372DB51230F162C00972AB8 /* Build configuration list for PBXNativeTarget "CrwdnApplication" */;
+			buildPhases = (
+				4372DB22230F162B00972AB8 /* Sources */,
+				4372DB23230F162B00972AB8 /* Frameworks */,
+				4372DB24230F162B00972AB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CrwdnApplication;
+			productName = CrwdnApplication;
+			productReference = 4372DB26230F162B00972AB8 /* CrwdnApplication.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4372DB3C230F162C00972AB8 /* CrwdnApplicationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4372DB54230F162C00972AB8 /* Build configuration list for PBXNativeTarget "CrwdnApplicationTests" */;
+			buildPhases = (
+				4372DB39230F162C00972AB8 /* Sources */,
+				4372DB3A230F162C00972AB8 /* Frameworks */,
+				4372DB3B230F162C00972AB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4372DB3F230F162C00972AB8 /* PBXTargetDependency */,
+			);
+			name = CrwdnApplicationTests;
+			productName = CrwdnApplicationTests;
+			productReference = 4372DB3D230F162C00972AB8 /* CrwdnApplicationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4372DB47230F162C00972AB8 /* CrwdnApplicationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4372DB57230F162C00972AB8 /* Build configuration list for PBXNativeTarget "CrwdnApplicationUITests" */;
+			buildPhases = (
+				4372DB44230F162C00972AB8 /* Sources */,
+				4372DB45230F162C00972AB8 /* Frameworks */,
+				4372DB46230F162C00972AB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4372DB4A230F162C00972AB8 /* PBXTargetDependency */,
+			);
+			name = CrwdnApplicationUITests;
+			productName = CrwdnApplicationUITests;
+			productReference = 4372DB48230F162C00972AB8 /* CrwdnApplicationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4372DB1E230F162B00972AB8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Ebuka Egbunam";
+				TargetAttributes = {
+					4372DB25230F162B00972AB8 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					4372DB3C230F162C00972AB8 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 4372DB25230F162B00972AB8;
+					};
+					4372DB47230F162C00972AB8 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 4372DB25230F162B00972AB8;
+					};
+				};
+			};
+			buildConfigurationList = 4372DB21230F162B00972AB8 /* Build configuration list for PBXProject "CrwdnApplication" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4372DB1D230F162B00972AB8;
+			productRefGroup = 4372DB27230F162B00972AB8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4372DB25230F162B00972AB8 /* CrwdnApplication */,
+				4372DB3C230F162C00972AB8 /* CrwdnApplicationTests */,
+				4372DB47230F162C00972AB8 /* CrwdnApplicationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4372DB24230F162B00972AB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4372DB5B230F166C00972AB8 /* Main.storyboard in Resources */,
+				4372DB37230F162C00972AB8 /* LaunchScreen.storyboard in Resources */,
+				4372DB872310BA6100972AB8 /* Symbol @3x.png in Resources */,
+				432A3EA1233C55C4006A96F0 /* images.png in Resources */,
+				4372DB77230F174400972AB8 /* DENY button@3x.png in Resources */,
+				4372DB7B230F176000972AB8 /* Rectangle 46@3x.png in Resources */,
+				432A3EA2233C55C4006A96F0 /* images.jpeg in Resources */,
+				4372DB63230F16B600972AB8 /* CRWDN NEEDS YOUR LOCATION TO BE A FUNCTIONAL APP@2x.png in Resources */,
+				4372DB73230F172000972AB8 /* CRWND WILL LIKE TO ACCESS YOU LOCATION@2x.png in Resources */,
+				4372DB7F230F188F00972AB8 /* Splash Screen – 7@2x.png in Resources */,
+				4372DB6C230F16EF00972AB8 /* button1.png in Resources */,
+				4372DB34230F162C00972AB8 /* Assets.xcassets in Resources */,
+				4372DB67230F16BE00972AB8 /* I WOULD LIKE TO CHANGE MY MIND@2x.png in Resources */,
+				4372DB5F230F168A00972AB8 /* Splash Screen – delete this bruh@3x.png in Resources */,
+				432A3EA0233C55C4006A96F0 /* images-3.png in Resources */,
+				432A3E9F233C55C4006A96F0 /* images-2.png in Resources */,
+				4372DB6F230F16EF00972AB8 /* button DENY .png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4372DB3B230F162C00972AB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4372DB7C230F176000972AB8 /* Rectangle 46@3x.png in Resources */,
+				4372DB74230F172000972AB8 /* CRWND WILL LIKE TO ACCESS YOU LOCATION@2x.png in Resources */,
+				4372DB80230F188F00972AB8 /* Splash Screen – 7@2x.png in Resources */,
+				4372DB64230F16B600972AB8 /* CRWDN NEEDS YOUR LOCATION TO BE A FUNCTIONAL APP@2x.png in Resources */,
+				4372DB5C230F166C00972AB8 /* Main.storyboard in Resources */,
+				4372DB68230F16BE00972AB8 /* I WOULD LIKE TO CHANGE MY MIND@2x.png in Resources */,
+				4372DB78230F174400972AB8 /* DENY button@3x.png in Resources */,
+				4372DB70230F16EF00972AB8 /* button DENY .png in Resources */,
+				4372DB6D230F16EF00972AB8 /* button1.png in Resources */,
+				4372DB60230F168A00972AB8 /* Splash Screen – delete this bruh@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4372DB46230F162C00972AB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4372DB7D230F176000972AB8 /* Rectangle 46@3x.png in Resources */,
+				4372DB75230F172000972AB8 /* CRWND WILL LIKE TO ACCESS YOU LOCATION@2x.png in Resources */,
+				4372DB81230F188F00972AB8 /* Splash Screen – 7@2x.png in Resources */,
+				4372DB65230F16B600972AB8 /* CRWDN NEEDS YOUR LOCATION TO BE A FUNCTIONAL APP@2x.png in Resources */,
+				4372DB5D230F166C00972AB8 /* Main.storyboard in Resources */,
+				4372DB69230F16BE00972AB8 /* I WOULD LIKE TO CHANGE MY MIND@2x.png in Resources */,
+				4372DB79230F174400972AB8 /* DENY button@3x.png in Resources */,
+				4372DB71230F16EF00972AB8 /* button DENY .png in Resources */,
+				4372DB6E230F16EF00972AB8 /* button1.png in Resources */,
+				4372DB61230F168A00972AB8 /* Splash Screen – delete this bruh@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4372DB22230F162B00972AB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4372DB2C230F162B00972AB8 /* ViewController.swift in Sources */,
+				430D2D38231DFF1C005510A2 /* CameraViewController.swift in Sources */,
+				4372DB2A230F162B00972AB8 /* AppDelegate.swift in Sources */,
+				4372DB32230F162B00972AB8 /* CrwdnApplication.xcdatamodeld in Sources */,
+				4372DB83230F3F9700972AB8 /* PopUpViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4372DB39230F162C00972AB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4372DB42230F162C00972AB8 /* CrwdnApplicationTests.swift in Sources */,
+				4372DB84230F3F9700972AB8 /* PopUpViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4372DB44230F162C00972AB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4372DB4D230F162C00972AB8 /* CrwdnApplicationUITests.swift in Sources */,
+				4372DB85230F3F9700972AB8 /* PopUpViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4372DB3F230F162C00972AB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4372DB25230F162B00972AB8 /* CrwdnApplication */;
+			targetProxy = 4372DB3E230F162C00972AB8 /* PBXContainerItemProxy */;
+		};
+		4372DB4A230F162C00972AB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4372DB25230F162B00972AB8 /* CrwdnApplication */;
+			targetProxy = 4372DB49230F162C00972AB8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4372DB35230F162C00972AB8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4372DB36230F162C00972AB8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4372DB4F230F162C00972AB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4372DB50230F162C00972AB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4372DB52230F162C00972AB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63XVB98W2T;
+				INFOPLIST_FILE = CrwdnApplication/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ebukaebunam.CrwdnApplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4372DB53230F162C00972AB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63XVB98W2T;
+				INFOPLIST_FILE = CrwdnApplication/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ebukaebunam.CrwdnApplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4372DB55230F162C00972AB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63XVB98W2T;
+				INFOPLIST_FILE = CrwdnApplicationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ebukaebunam.CrwdnApplicationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CrwdnApplication.app/CrwdnApplication";
+			};
+			name = Debug;
+		};
+		4372DB56230F162C00972AB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63XVB98W2T;
+				INFOPLIST_FILE = CrwdnApplicationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ebukaebunam.CrwdnApplicationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CrwdnApplication.app/CrwdnApplication";
+			};
+			name = Release;
+		};
+		4372DB58230F162C00972AB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63XVB98W2T;
+				INFOPLIST_FILE = CrwdnApplicationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ebukaebunam.CrwdnApplicationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CrwdnApplication;
+			};
+			name = Debug;
+		};
+		4372DB59230F162C00972AB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63XVB98W2T;
+				INFOPLIST_FILE = CrwdnApplicationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ebukaebunam.CrwdnApplicationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CrwdnApplication;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4372DB21230F162B00972AB8 /* Build configuration list for PBXProject "CrwdnApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4372DB4F230F162C00972AB8 /* Debug */,
+				4372DB50230F162C00972AB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4372DB51230F162C00972AB8 /* Build configuration list for PBXNativeTarget "CrwdnApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4372DB52230F162C00972AB8 /* Debug */,
+				4372DB53230F162C00972AB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4372DB54230F162C00972AB8 /* Build configuration list for PBXNativeTarget "CrwdnApplicationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4372DB55230F162C00972AB8 /* Debug */,
+				4372DB56230F162C00972AB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4372DB57230F162C00972AB8 /* Build configuration list for PBXNativeTarget "CrwdnApplicationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4372DB58230F162C00972AB8 /* Debug */,
+				4372DB59230F162C00972AB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4372DB30230F162B00972AB8 /* CrwdnApplication.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4372DB31230F162B00972AB8 /* CrwdnApplication.xcdatamodel */,
+			);
+			currentVersion = 4372DB31230F162B00972AB8 /* CrwdnApplication.xcdatamodel */;
+			path = CrwdnApplication.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4372DB1E230F162B00972AB8 /* Project object */;
+}

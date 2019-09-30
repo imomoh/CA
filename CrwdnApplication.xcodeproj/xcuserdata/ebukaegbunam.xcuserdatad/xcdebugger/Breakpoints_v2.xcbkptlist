@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "879A7E7E-1DF0-4DE7-A140-50E687AD58C0"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E38D5BFE-521B-4427-909B-FD8D3D086586"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CrwdnApplication/ViewController.swift"
+            timestampString = "591075663.619125"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
