@@ -3,15 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0934C73B60408FD65280FDF8 /* Pods_CrwdnApplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F3855BD4BC1B3D703662565 /* Pods_CrwdnApplication.framework */; };
 		430D2D38231DFF1C005510A2 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430D2D37231DFF1C005510A2 /* CameraViewController.swift */; };
 		432A3E9F233C55C4006A96F0 /* images-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 432A3E9B233C55C4006A96F0 /* images-2.png */; };
 		432A3EA0233C55C4006A96F0 /* images-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 432A3E9C233C55C4006A96F0 /* images-3.png */; };
 		432A3EA1233C55C4006A96F0 /* images.png in Resources */ = {isa = PBXBuildFile; fileRef = 432A3E9D233C55C4006A96F0 /* images.png */; };
 		432A3EA2233C55C4006A96F0 /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 432A3E9E233C55C4006A96F0 /* images.jpeg */; };
+		43354EE02342EC12002AFCB7 /* GMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43354EDF2342EC12002AFCB7 /* GMapController.swift */; };
 		4372DB2A230F162B00972AB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4372DB29230F162B00972AB8 /* AppDelegate.swift */; };
 		4372DB2C230F162B00972AB8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4372DB2B230F162B00972AB8 /* ViewController.swift */; };
 		4372DB32230F162B00972AB8 /* CrwdnApplication.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4372DB30230F162B00972AB8 /* CrwdnApplication.xcdatamodeld */; };
@@ -53,6 +55,9 @@
 		4372DB84230F3F9700972AB8 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4372DB82230F3F9700972AB8 /* PopUpViewController.swift */; };
 		4372DB85230F3F9700972AB8 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4372DB82230F3F9700972AB8 /* PopUpViewController.swift */; };
 		4372DB872310BA6100972AB8 /* Symbol @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4372DB862310BA6100972AB8 /* Symbol @3x.png */; };
+		437480A12343159300C2EC69 /* GMapNibViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4374809F2343159300C2EC69 /* GMapNibViewController.swift */; };
+		437480A22343159300C2EC69 /* GMapNibViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 437480A02343159300C2EC69 /* GMapNibViewController.xib */; };
+		43C5E4992342F25800D06BCE /* GMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C5E4972342F25800D06BCE /* GMapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,11 +78,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		017ADF120E1E1B05CAB60DE5 /* Pods-CrwdnApplication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrwdnApplication.debug.xcconfig"; path = "Target Support Files/Pods-CrwdnApplication/Pods-CrwdnApplication.debug.xcconfig"; sourceTree = "<group>"; };
+		0F3855BD4BC1B3D703662565 /* Pods_CrwdnApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CrwdnApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		430D2D37231DFF1C005510A2 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		432A3E9B233C55C4006A96F0 /* images-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "images-2.png"; sourceTree = "<group>"; };
 		432A3E9C233C55C4006A96F0 /* images-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "images-3.png"; sourceTree = "<group>"; };
 		432A3E9D233C55C4006A96F0 /* images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = images.png; sourceTree = "<group>"; };
 		432A3E9E233C55C4006A96F0 /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpeg; sourceTree = "<group>"; };
+		43354EDF2342EC12002AFCB7 /* GMapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GMapController.swift; path = CrwdnApplication/GMapController.swift; sourceTree = SOURCE_ROOT; };
 		4372DB26230F162B00972AB8 /* CrwdnApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrwdnApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4372DB29230F162B00972AB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4372DB2B230F162B00972AB8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +111,10 @@
 		4372DB7E230F188F00972AB8 /* Splash Screen – 7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Splash Screen – 7@2x.png"; sourceTree = "<group>"; };
 		4372DB82230F3F9700972AB8 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		4372DB862310BA6100972AB8 /* Symbol @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Symbol @3x.png"; sourceTree = "<group>"; };
+		4374809F2343159300C2EC69 /* GMapNibViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMapNibViewController.swift; sourceTree = "<group>"; };
+		437480A02343159300C2EC69 /* GMapNibViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GMapNibViewController.xib; sourceTree = "<group>"; };
+		43C5E4972342F25800D06BCE /* GMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMapViewController.swift; sourceTree = "<group>"; };
+		EFA8122ED1288952C13E641B /* Pods-CrwdnApplication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrwdnApplication.release.xcconfig"; path = "Target Support Files/Pods-CrwdnApplication/Pods-CrwdnApplication.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0934C73B60408FD65280FDF8 /* Pods_CrwdnApplication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +143,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		149BEE5F82FB4A242EBC8D49 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				017ADF120E1E1B05CAB60DE5 /* Pods-CrwdnApplication.debug.xcconfig */,
+				EFA8122ED1288952C13E641B /* Pods-CrwdnApplication.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		43354EDE2342B2AC002AFCB7 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				4372DB5E230F168A00972AB8 /* Splash Screen – delete this bruh@3x.png */,
+				4372DB66230F16BD00972AB8 /* I WOULD LIKE TO CHANGE MY MIND@2x.png */,
+				4372DB6A230F16EF00972AB8 /* button1.png */,
+				4372DB76230F174300972AB8 /* DENY button@3x.png */,
+				4372DB862310BA6100972AB8 /* Symbol @3x.png */,
+				432A3E9B233C55C4006A96F0 /* images-2.png */,
+				432A3E9C233C55C4006A96F0 /* images-3.png */,
+				432A3E9E233C55C4006A96F0 /* images.jpeg */,
+				432A3E9D233C55C4006A96F0 /* images.png */,
+				4372DB6B230F16EF00972AB8 /* button DENY .png */,
+				4372DB7E230F188F00972AB8 /* Splash Screen – 7@2x.png */,
+				4372DB7A230F176000972AB8 /* Rectangle 46@3x.png */,
+				4372DB72230F172000972AB8 /* CRWND WILL LIKE TO ACCESS YOU LOCATION@2x.png */,
+				4372DB62230F16B600972AB8 /* CRWDN NEEDS YOUR LOCATION TO BE A FUNCTIONAL APP@2x.png */,
+				43354EDF2342EC12002AFCB7 /* GMapController.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		4372DB1D230F162B00972AB8 = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +181,8 @@
 				4372DB40230F162C00972AB8 /* CrwdnApplicationTests */,
 				4372DB4B230F162C00972AB8 /* CrwdnApplicationUITests */,
 				4372DB27230F162B00972AB8 /* Products */,
+				149BEE5F82FB4A242EBC8D49 /* Pods */,
+				66B9362F8E7910C2D41289BE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -154,27 +200,17 @@
 			isa = PBXGroup;
 			children = (
 				4372DB29230F162B00972AB8 /* AppDelegate.swift */,
+				43C5E4972342F25800D06BCE /* GMapViewController.swift */,
+				4374809F2343159300C2EC69 /* GMapNibViewController.swift */,
+				437480A02343159300C2EC69 /* GMapNibViewController.xib */,
 				4372DB82230F3F9700972AB8 /* PopUpViewController.swift */,
 				4372DB2B230F162B00972AB8 /* ViewController.swift */,
-				430D2D37231DFF1C005510A2 /* CameraViewController.swift */,
 				4372DB5A230F166C00972AB8 /* Main.storyboard */,
+				430D2D37231DFF1C005510A2 /* CameraViewController.swift */,
+				43354EDE2342B2AC002AFCB7 /* New Group */,
 				4372DB33230F162C00972AB8 /* Assets.xcassets */,
 				4372DB35230F162C00972AB8 /* LaunchScreen.storyboard */,
 				4372DB38230F162C00972AB8 /* Info.plist */,
-				4372DB5E230F168A00972AB8 /* Splash Screen – delete this bruh@3x.png */,
-				4372DB66230F16BD00972AB8 /* I WOULD LIKE TO CHANGE MY MIND@2x.png */,
-				4372DB6A230F16EF00972AB8 /* button1.png */,
-				4372DB76230F174300972AB8 /* DENY button@3x.png */,
-				4372DB862310BA6100972AB8 /* Symbol @3x.png */,
-				432A3E9B233C55C4006A96F0 /* images-2.png */,
-				432A3E9C233C55C4006A96F0 /* images-3.png */,
-				432A3E9E233C55C4006A96F0 /* images.jpeg */,
-				432A3E9D233C55C4006A96F0 /* images.png */,
-				4372DB6B230F16EF00972AB8 /* button DENY .png */,
-				4372DB7E230F188F00972AB8 /* Splash Screen – 7@2x.png */,
-				4372DB7A230F176000972AB8 /* Rectangle 46@3x.png */,
-				4372DB72230F172000972AB8 /* CRWND WILL LIKE TO ACCESS YOU LOCATION@2x.png */,
-				4372DB62230F16B600972AB8 /* CRWDN NEEDS YOUR LOCATION TO BE A FUNCTIONAL APP@2x.png */,
 				4372DB30230F162B00972AB8 /* CrwdnApplication.xcdatamodeld */,
 			);
 			path = CrwdnApplication;
@@ -198,6 +234,14 @@
 			path = CrwdnApplicationUITests;
 			sourceTree = "<group>";
 		};
+		66B9362F8E7910C2D41289BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F3855BD4BC1B3D703662565 /* Pods_CrwdnApplication.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -205,9 +249,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4372DB51230F162C00972AB8 /* Build configuration list for PBXNativeTarget "CrwdnApplication" */;
 			buildPhases = (
+				EBDE457EEFEFD377821A8C8B /* [CP] Check Pods Manifest.lock */,
 				4372DB22230F162B00972AB8 /* Sources */,
 				4372DB23230F162B00972AB8 /* Frameworks */,
 				4372DB24230F162B00972AB8 /* Resources */,
+				1C10A2585A81AC144D14184E /* [CP] Copy Pods Resources */,
+				DFDC7F0DA7CFD90D3D045577 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -305,6 +352,7 @@
 				4372DB5B230F166C00972AB8 /* Main.storyboard in Resources */,
 				4372DB37230F162C00972AB8 /* LaunchScreen.storyboard in Resources */,
 				4372DB872310BA6100972AB8 /* Symbol @3x.png in Resources */,
+				437480A22343159300C2EC69 /* GMapNibViewController.xib in Resources */,
 				432A3EA1233C55C4006A96F0 /* images.png in Resources */,
 				4372DB77230F174400972AB8 /* DENY button@3x.png in Resources */,
 				4372DB7B230F176000972AB8 /* Rectangle 46@3x.png in Resources */,
@@ -358,6 +406,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1C10A2585A81AC144D14184E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CrwdnApplication/Pods-CrwdnApplication-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CrwdnApplication/Pods-CrwdnApplication-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CrwdnApplication/Pods-CrwdnApplication-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFDC7F0DA7CFD90D3D045577 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CrwdnApplication/Pods-CrwdnApplication-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CrwdnApplication/Pods-CrwdnApplication-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CrwdnApplication/Pods-CrwdnApplication-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBDE457EEFEFD377821A8C8B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CrwdnApplication-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4372DB22230F162B00972AB8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -365,7 +472,10 @@
 			files = (
 				4372DB2C230F162B00972AB8 /* ViewController.swift in Sources */,
 				430D2D38231DFF1C005510A2 /* CameraViewController.swift in Sources */,
+				43354EE02342EC12002AFCB7 /* GMapController.swift in Sources */,
+				437480A12343159300C2EC69 /* GMapNibViewController.swift in Sources */,
 				4372DB2A230F162B00972AB8 /* AppDelegate.swift in Sources */,
+				43C5E4992342F25800D06BCE /* GMapViewController.swift in Sources */,
 				4372DB32230F162B00972AB8 /* CrwdnApplication.xcdatamodeld in Sources */,
 				4372DB83230F3F9700972AB8 /* PopUpViewController.swift in Sources */,
 			);
@@ -534,6 +644,7 @@
 		};
 		4372DB52230F162C00972AB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 017ADF120E1E1B05CAB60DE5 /* Pods-CrwdnApplication.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -552,6 +663,7 @@
 		};
 		4372DB53230F162C00972AB8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFA8122ED1288952C13E641B /* Pods-CrwdnApplication.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

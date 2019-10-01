@@ -8,18 +8,35 @@
 
 import UIKit
 import CoreData
+import GoogleMaps
+import GooglePlaces
+import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    let apiKey = "AIzaSyAjMBQVv99mHF6s9h8daZbRc6EheO6sjog"
     
     
     
 
 
+
+    
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        GMSServices.provideAPIKey(apiKey)
+        GMSPlacesClient.provideAPIKey(apiKey)
+        
+        let parseConfig = ParseClientConfiguration {
+            $0.applicationId = "parseAppId"
+            $0.clientKey = "parseClientKey"
+            $0.server = "parseServerUrlString"
+        }
+        Parse.initialize(with: parseConfig)
+        
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         let sb = UIStoryboard(name: "Main", bundle: nil)
@@ -32,9 +49,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
         }
         else{
-            vc = sb.instantiateInitialViewController()! 
+            vc = sb.instantiateInitialViewController()!
             
-            // instaniate normalview controller 
+            // instaniate normalview controller
         }
         
         
