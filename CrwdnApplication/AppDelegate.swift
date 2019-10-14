@@ -8,34 +8,44 @@
 
 import UIKit
 import CoreData
-import GoogleMaps
-import GooglePlaces
-import Parse
+//import GoogleMaps
+//import GooglePlaces
+//import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    let apiKey = "AIzaSyAjMBQVv99mHF6s9h8daZbRc6EheO6sjog"
+    let apiKey = "AIzaSyCRQ5K2G8aruotYr00kolzEAmk4HBBwwNY"
     
     
     
 
 
 
-    
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        GMSServices.provideAPIKey(apiKey)
-        GMSPlacesClient.provideAPIKey(apiKey)
-        
-        let parseConfig = ParseClientConfiguration {
-            $0.applicationId = "parseAppId"
-            $0.clientKey = "parseClientKey"
-            $0.server = "parseServerUrlString"
-        }
-        Parse.initialize(with: parseConfig)
+        return true
+    }
+    
+  /*
+    
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        // Override point for customization after application launch.
+        //MARK:- Google api config
+//
+//        GMSServices.provideAPIKey(apiKey)
+//        GMSPlacesClient.provideAPIKey(apiKey)
+//
+//
+        //MARK:- parse config
+//        let parseConfig = ParseClientConfiguration {
+//            $0.applicationId = "f47a0c8c25a5b8cb3687df27d0d7a64ec75246a5"
+//            $0.clientKey = "c56aeffb98dd009e1a5eb8ac8dbaf196ce28cfa1"
+//            $0.server = "http://18.222.159.195:80/parse"
+//        }
+//        Parse.initialize(with: parseConfig)
         
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
@@ -60,6 +70,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
+    */
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

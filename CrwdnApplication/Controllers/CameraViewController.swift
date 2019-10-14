@@ -40,6 +40,11 @@ class CameraViewController: UIViewController , AVCapturePhotoCaptureDelegate{
         
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        navigationController?.setToolbarHidden(false, animated: true)
+    }
+    
     
     func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
         guard let photoData = photo.fileDataRepresentation() else {
