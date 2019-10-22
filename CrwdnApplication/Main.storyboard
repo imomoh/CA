@@ -36,33 +36,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gtC-1j-opC">
                                 <rect key="frame" x="0.0" y="664" width="414" height="793"/>
                                 <subviews>
-                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9vp-2B-M3Z">
-                                        <rect key="frame" x="0.0" y="58" width="414" height="168"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="168" id="0yu-6g-YNf"/>
-                                        </constraints>
-                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5je-bm-E2B">
-                                            <size key="itemSize" width="50" height="50"/>
-                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        </collectionViewFlowLayout>
-                                        <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="sjH-50-t8S">
-                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Sxl-ni-sDU">
-                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                </collectionViewCellContentView>
-                                            </collectionViewCell>
-                                        </cells>
-                                        <connections>
-                                            <outlet property="dataSource" destination="xws-zD-hXH" id="pW6-xb-Lf8"/>
-                                            <outlet property="delegate" destination="xws-zD-hXH" id="hWJ-1Y-1by"/>
-                                        </connections>
-                                    </collectionView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOP CROWDS NEAR ME " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIN-P3-pNf">
                                         <rect key="frame" x="0.0" y="0.0" width="406" height="50"/>
                                         <constraints>
@@ -72,15 +45,47 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="59g-UE-2eU">
+                                        <rect key="frame" x="0.0" y="82" width="414" height="242"/>
+                                        <subviews>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9vp-2B-M3Z">
+                                                <rect key="frame" x="0.0" y="2" width="425" height="163"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5je-bm-E2B">
+                                                    <size key="itemSize" width="50" height="50"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="sjH-50-t8S">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Sxl-ni-sDU">
+                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                        </collectionViewCellContentView>
+                                                    </collectionViewCell>
+                                                </cells>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="xws-zD-hXH" id="pW6-xb-Lf8"/>
+                                                    <outlet property="delegate" destination="xws-zD-hXH" id="hWJ-1Y-1by"/>
+                                                </connections>
+                                            </collectionView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstItem="qIN-P3-pNf" firstAttribute="top" secondItem="gtC-1j-opC" secondAttribute="top" id="N0w-Qe-r5x"/>
                                     <constraint firstItem="qIN-P3-pNf" firstAttribute="trailing" secondItem="gtC-1j-opC" secondAttribute="trailingMargin" id="Qo4-Jd-lZz"/>
                                     <constraint firstItem="qIN-P3-pNf" firstAttribute="leading" secondItem="gtC-1j-opC" secondAttribute="leading" id="TPY-hH-CIZ"/>
-                                    <constraint firstItem="9vp-2B-M3Z" firstAttribute="centerX" secondItem="gtC-1j-opC" secondAttribute="centerX" id="Vw2-6K-7CA"/>
-                                    <constraint firstItem="9vp-2B-M3Z" firstAttribute="top" secondItem="qIN-P3-pNf" secondAttribute="bottom" constant="8" id="Zw6-WG-WWg"/>
-                                    <constraint firstItem="qIN-P3-pNf" firstAttribute="leading" secondItem="9vp-2B-M3Z" secondAttribute="leading" id="n0u-t2-Mb1"/>
+                                    <constraint firstItem="59g-UE-2eU" firstAttribute="top" secondItem="qIN-P3-pNf" secondAttribute="bottom" constant="32" id="UNa-uj-CbY"/>
+                                    <constraint firstItem="59g-UE-2eU" firstAttribute="leading" secondItem="qIN-P3-pNf" secondAttribute="leading" id="ZXb-Gp-kG8"/>
+                                    <constraint firstItem="59g-UE-2eU" firstAttribute="centerX" secondItem="gtC-1j-opC" secondAttribute="centerX" id="dCS-mA-ozE"/>
+                                    <constraint firstAttribute="bottom" secondItem="59g-UE-2eU" secondAttribute="bottom" constant="469" id="unj-Zv-A4g"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="314" translatesAutoresizingMaskIntoConstraints="NO" id="awT-ow-sQ5">
@@ -138,7 +143,9 @@
                         <outlet property="animatedStack" destination="awT-ow-sQ5" id="Fee-Rg-uoA"/>
                         <outlet property="collectionView" destination="9vp-2B-M3Z" id="7VI-zt-4Tq"/>
                         <outlet property="mapView" destination="wzJ-gW-03r" id="MAh-0N-p8a"/>
+                        <outlet property="noGestureView" destination="59g-UE-2eU" id="5iv-LN-gVg"/>
                         <outlet property="positionOutlet" destination="kfy-up-xwL" id="GNe-aN-VZ1"/>
+                        <outlet property="topCrowds" destination="awT-ow-sQ5" id="7lz-Ep-svG"/>
                         <outlet property="viewAdd" destination="gtC-1j-opC" id="A0U-5a-IgR"/>
                     </connections>
                 </viewController>

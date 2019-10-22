@@ -18,13 +18,13 @@ class ViewController: UIViewController , UICollectionViewDelegate , UICollection
     
     
     
+   // long and lat of white house : 38.8977° N, 77.0365° W
     
     
+    let coordinate =  CLLocationCoordinate2DMake(38.8977, -77.0365)
     
     
-    
-    
-    // MARK:- variables,enums closures to do with cardview 
+    // MARK:- variables,enums closures to do with
     //enum
     enum cardState{
         case expanded
@@ -55,6 +55,11 @@ class ViewController: UIViewController , UICollectionViewDelegate , UICollection
     @IBOutlet weak var animatedStack: UIStackView!
     
     
+    @IBOutlet weak var topCrowds: UIStackView!
+    
+    
+    @IBOutlet weak var noGestureView: UIView!
+    
     @IBOutlet weak var viewAdd: UIView!
     
      @IBOutlet weak var collectionView: UICollectionView!
@@ -71,6 +76,7 @@ class ViewController: UIViewController , UICollectionViewDelegate , UICollection
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewAdd.layer.cornerRadius = 15
         // registering the nib
         self.collectionView.register(UINib(nibName:"CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: cellIdentifier)
 
@@ -78,6 +84,16 @@ class ViewController: UIViewController , UICollectionViewDelegate , UICollection
         checkLocationServices()
         
         setUpCard()
+        
+        
+        // setting up scrol to location
+        // not done
+        
+        
+        
+        let anotation = MKPointAnnotation()
+        anotation.coordinate = coordinate
+        mapView.addAnnotation(anotation)
         
     }
     
@@ -171,6 +187,18 @@ extension ViewController {
         
         return cell
        }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell = collectionView.cellForItem(at: indexPath)
+        cell?.layer.borderColor =  UIColor.red.cgColor
+    
+        print("\(indexPath.row)")
+        
+        let region = MKCoordinateRegion.init(center: coordinate, latitudinalMeters: regionInMeters, longitudinalMeters: regionInMeters)
+        mapView.setRegion(region, animated: true)
+        
+        
+    }
        
        
     
@@ -231,9 +259,13 @@ extension ViewController{
         //cardViewController.handleArea.addGestureRecognizer(tapGestureRecognizer)
         //cardViewController.handleArea.addGestureRecognizer(panGestureRecognizer)
         
-        viewAdd.addGestureRecognizer(tapGestureRecognizer)
+       viewAdd.addGestureRecognizer(tapGestureRecognizer)
+        //viewAdd.addGestureRecognizer(panGestureRecognizer)
         
-        collectionView.removeGestureRecognizer(tapGestureRecognizer)
+        noGestureView.removeGestureRecognizer(tapGestureRecognizer)
+        
+        
+       
         
         
     }
@@ -277,10 +309,11 @@ extension ViewController{
             let viewAnimator = UIViewPropertyAnimator(duration: duration, dampingRatio: 1) {
                 
                 switch state{
-                case .collapsed:
-                    self.viewAdd.transform = CGAffineTransform(translationX: 0, y: -(self.animatedLabel.frame.height - 64))
                 case .expanded:
-                    self.viewAdd.transform = CGAffineTransform(translationX: 0, y: -(self.cardHeight - self.animatedLabel.frame.height + 9))
+                    self.viewAdd.transform = CGAffineTransform(translationX: 0, y: -(self.viewAdd.frame.height - 650))
+
+                case .collapsed:
+                    self.viewAdd.transform = CGAffineTransform(translationX: 0, y: -(self.cardHeight - self.viewAdd.frame.height  + 440))
                 }
                 
                 
