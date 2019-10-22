@@ -73,6 +73,11 @@
 		4372DB81230F188F00972AB8 /* Splash Screen – 7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4372DB7E230F188F00972AB8 /* Splash Screen – 7@2x.png */; };
 		4372DB872310BA6100972AB8 /* Symbol @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4372DB862310BA6100972AB8 /* Symbol @3x.png */; };
 		43C5E4992342F25800D06BCE /* GMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C5E4972342F25800D06BCE /* GMapViewController.swift */; };
+		43D65B49235E8B9A00E391DE /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D65B47235E8B9A00E391DE /* CollectionViewCell.swift */; };
+		43D65B4A235E8B9A00E391DE /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43D65B48235E8B9A00E391DE /* CollectionViewCell.xib */; };
+		43D65B4E235EA67B00E391DE /* CRWDLOGO@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43D65B4B235EA67A00E391DE /* CRWDLOGO@3x.png */; };
+		43D65B4F235EA67B00E391DE /* CRWDLOGO.png in Resources */ = {isa = PBXBuildFile; fileRef = 43D65B4C235EA67B00E391DE /* CRWDLOGO.png */; };
+		43D65B50235EA67B00E391DE /* CRWDLOGO@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43D65B4D235EA67B00E391DE /* CRWDLOGO@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,6 +149,11 @@
 		4372DB7E230F188F00972AB8 /* Splash Screen – 7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Splash Screen – 7@2x.png"; sourceTree = "<group>"; };
 		4372DB862310BA6100972AB8 /* Symbol @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Symbol @3x.png"; sourceTree = "<group>"; };
 		43C5E4972342F25800D06BCE /* GMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMapViewController.swift; sourceTree = "<group>"; };
+		43D65B47235E8B9A00E391DE /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		43D65B48235E8B9A00E391DE /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		43D65B4B235EA67A00E391DE /* CRWDLOGO@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CRWDLOGO@3x.png"; path = "CrwdnApplication/CRWDLOGO@3x.png"; sourceTree = SOURCE_ROOT; };
+		43D65B4C235EA67B00E391DE /* CRWDLOGO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CRWDLOGO.png; path = CrwdnApplication/CRWDLOGO.png; sourceTree = SOURCE_ROOT; };
+		43D65B4D235EA67B00E391DE /* CRWDLOGO@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CRWDLOGO@2x.png"; path = "CrwdnApplication/CRWDLOGO@2x.png"; sourceTree = SOURCE_ROOT; };
 		EFA8122ED1288952C13E641B /* Pods-CrwdnApplication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrwdnApplication.release.xcconfig"; path = "Target Support Files/Pods-CrwdnApplication/Pods-CrwdnApplication.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -212,6 +222,9 @@
 		43354EDE2342B2AC002AFCB7 /* New Group */ = {
 			isa = PBXGroup;
 			children = (
+				43D65B4C235EA67B00E391DE /* CRWDLOGO.png */,
+				43D65B4D235EA67B00E391DE /* CRWDLOGO@2x.png */,
+				43D65B4B235EA67A00E391DE /* CRWDLOGO@3x.png */,
 				4372DB5E230F168A00972AB8 /* Splash Screen – delete this bruh@3x.png */,
 				4372DB66230F16BD00972AB8 /* I WOULD LIKE TO CHANGE MY MIND@2x.png */,
 				4372DB6A230F16EF00972AB8 /* button1.png */,
@@ -275,6 +288,8 @@
 				43280157235159C0004C5725 /* googlemapView */,
 				43280158235159D5004C5725 /* Controllers */,
 				4372DB5A230F166C00972AB8 /* Main.storyboard */,
+				43D65B47235E8B9A00E391DE /* CollectionViewCell.swift */,
+				43D65B48235E8B9A00E391DE /* CollectionViewCell.xib */,
 				4328015C23515A2C004C5725 /* PopUpViewControllers */,
 				43354EDE2342B2AC002AFCB7 /* New Group */,
 				4372DB33230F162C00972AB8 /* Assets.xcassets */,
@@ -432,6 +447,7 @@
 				431220282351F8C700E6CE8D /* slidupbar@2x.png in Resources */,
 				4312202A2351F8C700E6CE8D /* slidupbar.png in Resources */,
 				432A3EA2233C55C4006A96F0 /* images.jpeg in Resources */,
+				43D65B4A235E8B9A00E391DE /* CollectionViewCell.xib in Resources */,
 				4372DB63230F16B600972AB8 /* CRWDN NEEDS YOUR LOCATION TO BE A FUNCTIONAL APP@2x.png in Resources */,
 				4312201E2351F3BC00E6CE8D /* positon.png in Resources */,
 				4328015423511249004C5725 /* CardViewController.xib in Resources */,
@@ -441,8 +457,11 @@
 				431220182351F17B00E6CE8D /* camera@2x.png in Resources */,
 				4372DB6C230F16EF00972AB8 /* button1.png in Resources */,
 				4372DB34230F162C00972AB8 /* Assets.xcassets in Resources */,
+				43D65B4F235EA67B00E391DE /* CRWDLOGO.png in Resources */,
 				431220312351FA2200E6CE8D /* profileMenu@3x.png in Resources */,
+				43D65B50235EA67B00E391DE /* CRWDLOGO@2x.png in Resources */,
 				4372DB67230F16BE00972AB8 /* I WOULD LIKE TO CHANGE MY MIND@2x.png in Resources */,
+				43D65B4E235EA67B00E391DE /* CRWDLOGO@3x.png in Resources */,
 				4312202B2351F8C700E6CE8D /* slidehandleBar@3x.png in Resources */,
 				4372DB5F230F168A00972AB8 /* Splash Screen – delete this bruh@3x.png in Resources */,
 				432A3EA0233C55C4006A96F0 /* images-3.png in Resources */,
@@ -556,6 +575,7 @@
 			files = (
 				4372DB2C230F162B00972AB8 /* ViewController.swift in Sources */,
 				430D2D38231DFF1C005510A2 /* CameraViewController.swift in Sources */,
+				43D65B49235E8B9A00E391DE /* CollectionViewCell.swift in Sources */,
 				43354EE02342EC12002AFCB7 /* GMapController.swift in Sources */,
 				4372DB2A230F162B00972AB8 /* AppDelegate.swift in Sources */,
 				4328015323511249004C5725 /* CardViewController.swift in Sources */,

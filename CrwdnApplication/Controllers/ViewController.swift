@@ -10,9 +10,21 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController , UICollectionViewDelegate , UICollectionViewDataSource{
+   
+    // collecction view variables
     
-    // MARK:- variables,enums closures to do with cardview
+     let  cellIdentifier = "realCell"
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    // MARK:- variables,enums closures to do with cardview 
     //enum
     enum cardState{
         case expanded
@@ -22,7 +34,7 @@ class ViewController: UIViewController {
     //variables
     var cardViewController : CardViewController!
     var visualEffectView : UIVisualEffectView!
-    let cardHeight :CGFloat = 300
+    let cardHeight :CGFloat = 180
     let cardhandleAreaHeight :CGFloat = 90
     var cardVisible = false
     var nextState :cardState{
@@ -40,6 +52,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var animatedLabel: UIButton!
     
     
+    @IBOutlet weak var animatedStack: UIStackView!
+    
+    
+    @IBOutlet weak var viewAdd: UIView!
+    
+     @IBOutlet weak var collectionView: UICollectionView!
+    
     @IBOutlet weak var positionOutlet: UIButton!
     
     @IBAction func centrePosition(_ sender: UIButton) {
@@ -52,11 +71,14 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // registering the nib
+        self.collectionView.register(UINib(nibName:"CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: cellIdentifier)
+
         //mapView.delegate = self as? MKMapViewDelegate
         checkLocationServices()
         
         setUpCard()
-    
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -116,7 +138,7 @@ class ViewController: UIViewController {
             // Show alert instructing them how to turn on permissions
             break
         case .notDetermined:
-            print("yup")
+            //print("yup")
             locationManager.requestWhenInUseAuthorization()
         case .restricted:
             // Show an alert letting them know what's up
@@ -130,8 +152,27 @@ class ViewController: UIViewController {
     
     
     // end oflocation services
-
     
+    
+    
+    
+}
+
+
+extension ViewController {
+    
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+           return 10
+       }
+       
+       func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath)
+        
+        return cell
+       }
+       
+       
     
     
 }
@@ -139,9 +180,13 @@ class ViewController: UIViewController {
 extension ViewController: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-       // guard let location = locations.last else { return }
-//        let region = MKCoordinateRegion.init(center: location.coordinate, latitudinalMeters: regionInMeters, longitudinalMeters: regionInMeters)
-//        mapView.setRegion(region, animated: true)
+        
+        
+        
+        // guard let location = locations.last else { return }
+        //        let region = MKCoordinateRegion.init(center: location.coordinate, latitudinalMeters: regionInMeters, longitudinalMeters: regionInMeters)
+        //        mapView.setRegion(region, animated: true)
+        
     }
     
     
@@ -149,6 +194,19 @@ extension ViewController: CLLocationManagerDelegate {
         checkLocationAuthorization()
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // everything thing that has to do witj the pop up slide view 
 
@@ -160,20 +218,22 @@ extension ViewController{
         //visualEffectView.frame = self.view.frame
         //self.view.addSubview(visualEffectView)
         
-        cardViewController = CardViewController(nibName: "CardViewController", bundle: nil)
-        self.addChild(cardViewController)
-        self.view.addSubview(cardViewController.view)
+        //cardViewController = CardViewController(nibName: "CardViewController", bundle: nil)
+        //self.addChild(cardViewController)
+        //self.view.addSubview(cardViewController.view)
         
-        cardViewController.view.frame = CGRect(x: 0, y: self.view.frame.height - cardhandleAreaHeight,
-                                               width: self.view.bounds.width, height: cardhandleAreaHeight)
+        //cardViewController.view.frame = CGRect(x: 0, y: self.view.frame.height - cardhandleAreaHeight,
+                                            //   width: self.view.bounds.width, height: cardhandleAreaHeight)
         
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.handleTap(recogonizer:)))
-        let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(ViewController.handlePan(recognizer:)))
+        //let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(ViewController.handlePan(recognizer:)))
         
-        cardViewController.handleArea.addGestureRecognizer(tapGestureRecognizer)
-        cardViewController.handleArea.addGestureRecognizer(panGestureRecognizer)
+        //cardViewController.handleArea.addGestureRecognizer(tapGestureRecognizer)
+        //cardViewController.handleArea.addGestureRecognizer(panGestureRecognizer)
         
+        viewAdd.addGestureRecognizer(tapGestureRecognizer)
         
+        collectionView.removeGestureRecognizer(tapGestureRecognizer)
         
         
     }
@@ -213,74 +273,105 @@ extension ViewController{
     
     func animateTransitionIfNeeded( state : cardState , duration :TimeInterval){
         if runningAnimations.isEmpty{
-            // animting frame
-            let frameAnimator  = UIViewPropertyAnimator(duration: duration, dampingRatio: 1) {
+            // animating view
+            let viewAnimator = UIViewPropertyAnimator(duration: duration, dampingRatio: 1) {
                 
                 switch state{
-                case .expanded:
-                    self.cardViewController.view.frame.origin.y =
-                        self.view.frame.height - self.cardHeight
                 case .collapsed:
-                    self.cardViewController.view.frame.origin.y = self.view.frame.height
-                        - self.cardhandleAreaHeight
-                
+                    self.viewAdd.transform = CGAffineTransform(translationX: 0, y: -(self.animatedLabel.frame.height - 64))
+                case .expanded:
+                    self.viewAdd.transform = CGAffineTransform(translationX: 0, y: -(self.cardHeight - self.animatedLabel.frame.height + 9))
                 }
                 
+                
             }
-            frameAnimator.addCompletion { (_) in
+            
+            viewAnimator.addCompletion { (_) in
                 self.cardVisible = !self.cardVisible
                 self.runningAnimations.removeAll()
             }
             
+            viewAnimator.startAnimation()
+            runningAnimations.append(viewAnimator)
             
-            frameAnimator.startAnimation()
-            runningAnimations.append(frameAnimator)
-//            //animate conner radius
-//            let connerRadius = UIViewPropertyAnimator(duration: duration, curve: .linear) {
+            
+            
+            
+            
+            
+            
+            
+            
+            //            // animting frame
+            //            let frameAnimator  = UIViewPropertyAnimator(duration: duration, dampingRatio: 1) {
+            //
+            //                switch state{
+            //                case .expanded:
+            //                    self.cardViewController.view.frame.origin.y =
+            //                        self.view.frame.height - self.cardHeight
+            //                case .collapsed:
+            //                    self.cardViewController.view.frame.origin.y = self.view.frame.height
+            //                        - self.cardhandleAreaHeight
+            //
+            //                }
+            //
+            //            }
+            //            frameAnimator.addCompletion { (_) in
+            //                self.cardVisible = !self.cardVisible
+            //                self.runningAnimations.removeAll()
+            //            }
+            //
+            //
+            //            frameAnimator.startAnimation()
+            //            runningAnimations.append(frameAnimator)
+            
+            
+            //            //animate conner radius
+            //            let connerRadius = UIViewPropertyAnimator(duration: duration, curve: .linear) {
+            //                switch state{
+            //                case .collapsed:
+            //                    self.cardViewController.view.layer.cornerRadius = 0
+            //                case .expanded:
+            //                    self.cardViewController.view.layer.cornerRadius = 0
+            //
+            //                }
+            //            }
+            //
+            //            connerRadius.startAnimation()
+            //            runningAnimations.append(connerRadius)
+            //
+            // animate button/label
+            let stackAnimator = UIViewPropertyAnimator(duration: duration, dampingRatio:1) {
+                switch state{
+                case .collapsed:
+                    self.animatedStack.transform = CGAffineTransform(translationX: 0, y: -(self.animatedStack.frame.height - 64))
+                    
+                case .expanded:
+                    self.animatedStack.transform = CGAffineTransform(translationX: 0, y: -(self.cardHeight - self.animatedStack.frame.height + 9))
+                    
+                }
+            }
+            
+            stackAnimator.startAnimation()
+            runningAnimations.append(stackAnimator)
+            
+            //buttonanimator ended
+//
+//            let positionButtonAnimator = UIViewPropertyAnimator(duration: duration, dampingRatio:1) {
 //                switch state{
 //                case .collapsed:
-//                    self.cardViewController.view.layer.cornerRadius = 0
+//                    self.positionOutlet.transform = CGAffineTransform(translationX: 0, y: -(self.positionOutlet.frame.height - 64))
+//
 //                case .expanded:
-//                    self.cardViewController.view.layer.cornerRadius = 0
-//                    
+//                    self.positionOutlet.transform = CGAffineTransform(translationX: 0, y: -(self.cardHeight - self.positionOutlet.frame.height + 9))
+//
 //                }
 //            }
-//            
-//            connerRadius.startAnimation()
-//            runningAnimations.append(connerRadius)
-//            
-            // animate button/label
-            let buttonAnimator = UIViewPropertyAnimator(duration: duration, dampingRatio:1) {
-                switch state{
-                case .collapsed:
-                    self.animatedLabel.transform = CGAffineTransform(translationX: 0, y: -(self.animatedLabel.frame.height - 64))
-
-                case .expanded:
-                    self.animatedLabel.transform = CGAffineTransform(translationX: 0, y: -(self.cardHeight - self.animatedLabel.frame.height + 9))
-
-                }
-            }
-
-            buttonAnimator.startAnimation()
-            runningAnimations.append(buttonAnimator)
-
-            //buttonanimator ended
-            
-            let positionButtonAnimator = UIViewPropertyAnimator(duration: duration, dampingRatio:1) {
-                switch state{
-                case .collapsed:
-                    self.positionOutlet.transform = CGAffineTransform(translationX: 0, y: -(self.positionOutlet.frame.height - 64))
-
-                case .expanded:
-                    self.positionOutlet.transform = CGAffineTransform(translationX: 0, y: -(self.cardHeight - self.positionOutlet.frame.height + 9))
-
-                }
-            }
-
-            positionButtonAnimator.startAnimation()
-            runningAnimations.append(positionButtonAnimator)
-
-            
+//
+//            positionButtonAnimator.startAnimation()
+//            runningAnimations.append(positionButtonAnimator)
+//
+//
             
         }
         
