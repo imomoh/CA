@@ -8,15 +8,34 @@
 
 import UIKit
 import CoreData
-//import GoogleMaps
-//import GooglePlaces
-//import Parse
+import GoogleMaps
+import GooglePlaces
+import Parse
+
+
+
+/*
+ 
+ using parse undertsnading
+ 
+ 1.create connection to server
+ 
+ 2. create annonymouse user
+    - finde user method
+    - check if user is conneted and handle all cases
+    - write function to leave function properly after function is done
+ 
+ 3.fetch information from parse server
+ */
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    let apiKey = "AIzaSyCRQ5K2G8aruotYr00kolzEAmk4HBBwwNY"
+    let GoogleapiKey = "AIzaSyCRQ5K2G8aruotYr00kolzEAmk4HBBwwNY"
+    let parseAPPId  = "f47a0c8c25a5b8cb3687df27d0d7a64ec75246a5"
+    let parseClientKey =  "c56aeffb98dd009e1a5eb8ac8dbaf196ce28cfa1"
+    let ParseServer = "http://18.222.159.195:80/parse"
     
     
     
@@ -26,6 +45,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+                //MARK:- Google api config
+        
+                GMSServices.provideAPIKey(GoogleapiKey)
+                GMSPlacesClient.provideAPIKey(GoogleapiKey)
+        
+              //  MARK:- parse config
+                let parseConfig = ParseClientConfiguration {
+                    $0.applicationId = self.parseAPPId
+                    $0.clientKey = self.parseClientKey
+                    $0.server = self.ParseServer
+                }
+                Parse.initialize(with: parseConfig)
+        
+        
+        
+        
+        //create user for parse
+        
+        
+        
+    
+
+        
+        
+        
+        
+        
+                
+        
         return true
     }
     

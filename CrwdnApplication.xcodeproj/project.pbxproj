@@ -72,6 +72,9 @@
 		4372DB80230F188F00972AB8 /* Splash Screen – 7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4372DB7E230F188F00972AB8 /* Splash Screen – 7@2x.png */; };
 		4372DB81230F188F00972AB8 /* Splash Screen – 7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4372DB7E230F188F00972AB8 /* Splash Screen – 7@2x.png */; };
 		4372DB872310BA6100972AB8 /* Symbol @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4372DB862310BA6100972AB8 /* Symbol @3x.png */; };
+		4396162D23680361001331FC /* SlideViewAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4396162C23680361001331FC /* SlideViewAnimations.swift */; };
+		4396162F236803F3001331FC /* CollectionViewExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4396162E236803F3001331FC /* CollectionViewExtention.swift */; };
+		4396163123680448001331FC /* LocationExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4396163023680448001331FC /* LocationExtention.swift */; };
 		43C5E4992342F25800D06BCE /* GMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C5E4972342F25800D06BCE /* GMapViewController.swift */; };
 		43D65B49235E8B9A00E391DE /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D65B47235E8B9A00E391DE /* CollectionViewCell.swift */; };
 		43D65B4A235E8B9A00E391DE /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43D65B48235E8B9A00E391DE /* CollectionViewCell.xib */; };
@@ -148,6 +151,9 @@
 		4372DB7A230F176000972AB8 /* Rectangle 46@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle 46@3x.png"; sourceTree = "<group>"; };
 		4372DB7E230F188F00972AB8 /* Splash Screen – 7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Splash Screen – 7@2x.png"; sourceTree = "<group>"; };
 		4372DB862310BA6100972AB8 /* Symbol @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Symbol @3x.png"; sourceTree = "<group>"; };
+		4396162C23680361001331FC /* SlideViewAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideViewAnimations.swift; sourceTree = "<group>"; };
+		4396162E236803F3001331FC /* CollectionViewExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewExtention.swift; sourceTree = "<group>"; };
+		4396163023680448001331FC /* LocationExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationExtention.swift; sourceTree = "<group>"; };
 		43C5E4972342F25800D06BCE /* GMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMapViewController.swift; sourceTree = "<group>"; };
 		43D65B47235E8B9A00E391DE /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		43D65B48235E8B9A00E391DE /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
@@ -200,14 +206,15 @@
 			path = googlemapView;
 			sourceTree = "<group>";
 		};
-		43280158235159D5004C5725 /* Controllers */ = {
+		43280158235159D5004C5725 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4396162B23680326001331FC /* Extentions  */,
 				4372DB2B230F162B00972AB8 /* ViewController.swift */,
 				43280155235158F3004C5725 /* ProfileViewController.swift */,
 				430D2D37231DFF1C005510A2 /* CameraViewController.swift */,
 			);
-			path = Controllers;
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 		4328015C23515A2C004C5725 /* PopUpViewControllers */ = {
@@ -219,7 +226,7 @@
 			path = PopUpViewControllers;
 			sourceTree = "<group>";
 		};
-		43354EDE2342B2AC002AFCB7 /* New Group */ = {
+		43354EDE2342B2AC002AFCB7 /* Images */ = {
 			isa = PBXGroup;
 			children = (
 				43D65B4C235EA67B00E391DE /* CRWDLOGO.png */,
@@ -256,7 +263,7 @@
 				4372DB62230F16B600972AB8 /* CRWDN NEEDS YOUR LOCATION TO BE A FUNCTIONAL APP@2x.png */,
 				43354EDF2342EC12002AFCB7 /* GMapController.swift */,
 			);
-			path = "New Group";
+			path = Images;
 			sourceTree = "<group>";
 		};
 		4372DB1D230F162B00972AB8 = {
@@ -286,12 +293,11 @@
 			children = (
 				4372DB29230F162B00972AB8 /* AppDelegate.swift */,
 				43280157235159C0004C5725 /* googlemapView */,
-				43280158235159D5004C5725 /* Controllers */,
-				4372DB5A230F166C00972AB8 /* Main.storyboard */,
-				43D65B47235E8B9A00E391DE /* CollectionViewCell.swift */,
-				43D65B48235E8B9A00E391DE /* CollectionViewCell.xib */,
+				439616322368060F001331FC /* Views */,
+				43280158235159D5004C5725 /* View Controllers */,
+				4396163323680639001331FC /* CollectionViewCell */,
 				4328015C23515A2C004C5725 /* PopUpViewControllers */,
-				43354EDE2342B2AC002AFCB7 /* New Group */,
+				43354EDE2342B2AC002AFCB7 /* Images */,
 				4372DB33230F162C00972AB8 /* Assets.xcassets */,
 				4372DB35230F162C00972AB8 /* LaunchScreen.storyboard */,
 				4372DB38230F162C00972AB8 /* Info.plist */,
@@ -316,6 +322,33 @@
 				4372DB4E230F162C00972AB8 /* Info.plist */,
 			);
 			path = CrwdnApplicationUITests;
+			sourceTree = "<group>";
+		};
+		4396162B23680326001331FC /* Extentions  */ = {
+			isa = PBXGroup;
+			children = (
+				4396162C23680361001331FC /* SlideViewAnimations.swift */,
+				4396162E236803F3001331FC /* CollectionViewExtention.swift */,
+				4396163023680448001331FC /* LocationExtention.swift */,
+			);
+			path = "Extentions ";
+			sourceTree = "<group>";
+		};
+		439616322368060F001331FC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4372DB5A230F166C00972AB8 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4396163323680639001331FC /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				43D65B47235E8B9A00E391DE /* CollectionViewCell.swift */,
+				43D65B48235E8B9A00E391DE /* CollectionViewCell.xib */,
+			);
+			path = CollectionViewCell;
 			sourceTree = "<group>";
 		};
 		66B9362F8E7910C2D41289BE /* Frameworks */ = {
@@ -578,8 +611,11 @@
 				43D65B49235E8B9A00E391DE /* CollectionViewCell.swift in Sources */,
 				43354EE02342EC12002AFCB7 /* GMapController.swift in Sources */,
 				4372DB2A230F162B00972AB8 /* AppDelegate.swift in Sources */,
+				4396162D23680361001331FC /* SlideViewAnimations.swift in Sources */,
+				4396162F236803F3001331FC /* CollectionViewExtention.swift in Sources */,
 				4328015323511249004C5725 /* CardViewController.swift in Sources */,
 				43C5E4992342F25800D06BCE /* GMapViewController.swift in Sources */,
+				4396163123680448001331FC /* LocationExtention.swift in Sources */,
 				43280156235158F3004C5725 /* ProfileViewController.swift in Sources */,
 				4372DB32230F162B00972AB8 /* CrwdnApplication.xcdatamodeld in Sources */,
 			);

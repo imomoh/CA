@@ -7,8 +7,16 @@
 //
 
 import UIKit
+import  CoreLocation
+import MapKit
 
 class CollectionViewCell: UICollectionViewCell {
+    
+    let firstView = ViewController()
+    
+    let locationManager = CLLocationManager()
+    let regionInMeters: Double = 1000
+    let coordinate =  CLLocationCoordinate2DMake(38.8977, -77.0365)
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,7 +30,7 @@ class CollectionViewCell: UICollectionViewCell {
         snapButtonOutlet.layer.shadowRadius = 1.0
         snapButtonOutlet.layer.shadowOpacity = 0.5
         snapButtonOutlet.layer.cornerRadius = snapButtonOutlet.frame.width / 2
-        snapButtonOutlet.backgroundColor = .red
+        //snapButtonOutlet.backgroundColor = .red
         
 //        behindView.layer.shadowColor = UIColor.black.cgColor
 //        behindView.layer.shadowOpacity = 0.5
@@ -49,5 +57,20 @@ class CollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var behindView: UIView!
     
     @IBOutlet weak var distanceInMiles: UILabel!
+    
+    
+    
+    
+    
+    
+    @IBAction func changeLoationViewButton(_ sender: Any) {
+        
+       
+        
+    }
+    
+    
+    
+    
     
 }
