@@ -81,6 +81,7 @@
 		43D65B4E235EA67B00E391DE /* CRWDLOGO@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43D65B4B235EA67A00E391DE /* CRWDLOGO@3x.png */; };
 		43D65B4F235EA67B00E391DE /* CRWDLOGO.png in Resources */ = {isa = PBXBuildFile; fileRef = 43D65B4C235EA67B00E391DE /* CRWDLOGO.png */; };
 		43D65B50235EA67B00E391DE /* CRWDLOGO@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43D65B4D235EA67B00E391DE /* CRWDLOGO@2x.png */; };
+		43DD1E142375747F00822948 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43DD1E132375747E00822948 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -160,6 +161,7 @@
 		43D65B4B235EA67A00E391DE /* CRWDLOGO@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CRWDLOGO@3x.png"; path = "CrwdnApplication/CRWDLOGO@3x.png"; sourceTree = SOURCE_ROOT; };
 		43D65B4C235EA67B00E391DE /* CRWDLOGO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CRWDLOGO.png; path = CrwdnApplication/CRWDLOGO.png; sourceTree = SOURCE_ROOT; };
 		43D65B4D235EA67B00E391DE /* CRWDLOGO@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CRWDLOGO@2x.png"; path = "CrwdnApplication/CRWDLOGO@2x.png"; sourceTree = SOURCE_ROOT; };
+		43DD1E132375747E00822948 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EFA8122ED1288952C13E641B /* Pods-CrwdnApplication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrwdnApplication.release.xcconfig"; path = "Target Support Files/Pods-CrwdnApplication/Pods-CrwdnApplication.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -301,6 +303,7 @@
 				4372DB33230F162C00972AB8 /* Assets.xcassets */,
 				4372DB35230F162C00972AB8 /* LaunchScreen.storyboard */,
 				4372DB38230F162C00972AB8 /* Info.plist */,
+				43DD1E132375747E00822948 /* GoogleService-Info.plist */,
 				4372DB30230F162B00972AB8 /* CrwdnApplication.xcdatamodeld */,
 			);
 			path = CrwdnApplication;
@@ -480,6 +483,7 @@
 				431220282351F8C700E6CE8D /* slidupbar@2x.png in Resources */,
 				4312202A2351F8C700E6CE8D /* slidupbar.png in Resources */,
 				432A3EA2233C55C4006A96F0 /* images.jpeg in Resources */,
+				43DD1E142375747F00822948 /* GoogleService-Info.plist in Resources */,
 				43D65B4A235E8B9A00E391DE /* CollectionViewCell.xib in Resources */,
 				4372DB63230F16B600972AB8 /* CRWDN NEEDS YOUR LOCATION TO BE A FUNCTIONAL APP@2x.png in Resources */,
 				4312201E2351F3BC00E6CE8D /* positon.png in Resources */,

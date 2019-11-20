@@ -4,4 +4,11 @@ target 'CrwdnApplication' do
   pod 'GoogleMaps'
   pod 'GooglePlaces'
   pod 'Parse'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
+  pod 'Firebase/Core'
+
+
+# https://firebase.google.com/docs/ios/setup#available-pods
 end

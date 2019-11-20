@@ -24,12 +24,20 @@ class CollectionViewCell: UICollectionViewCell {
        
          behindView.layer.cornerRadius = 12
         
-        snapButtonOutlet.layer.shadowColor = UIColor.black.cgColor
-        snapButtonOutlet.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
-        snapButtonOutlet.layer.masksToBounds = false
-        snapButtonOutlet.layer.shadowRadius = 1.0
-        snapButtonOutlet.layer.shadowOpacity = 0.5
-        snapButtonOutlet.layer.cornerRadius = snapButtonOutlet.frame.width / 2
+//        snapButtonOutlet.layer.shadowColor = UIColor.black.cgColor
+//        snapButtonOutlet.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+//        snapButtonOutlet.layer.masksToBounds = false
+//        snapButtonOutlet.layer.shadowRadius = 1.0
+//        snapButtonOutlet.layer.shadowOpacity = 0.5
+//        snapButtonOutlet.layer.cornerRadius = snapButtonOutlet.frame.width / 2
+//        snapButtonOutlet.layer.borderWidth = 1
+//
+//
+//        snapButtonOutlet.layer.borderColor = UIColor.red.cgColor
+//        snapButtonOutlet.backgroundColor = UIColor.gray
+//        snapButtonOutlet.imageView?.layer.cornerRadius = (snapButtonOutlet.imageView?.frame.width)! / 2
+//        snapButtonOutlet.imageView?.contentMode = .scaleAspectFit
+        
         //snapButtonOutlet.backgroundColor = .red
         
 //        behindView.layer.shadowColor = UIColor.black.cgColor
@@ -40,6 +48,8 @@ class CollectionViewCell: UICollectionViewCell {
 //        behindView.layer.masksToBounds = true
 //
         
+        snapImage.layer.cornerRadius =  snapImage.frame.width / 2
+        snapImage.clipsToBounds = true 
         
         
         
@@ -56,6 +66,7 @@ class CollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var views: UILabel!
     @IBOutlet weak var behindView: UIView!
     
+    @IBOutlet weak var snapImage: UIImageView!
     @IBOutlet weak var distanceInMiles: UILabel!
     
     
@@ -73,4 +84,9 @@ class CollectionViewCell: UICollectionViewCell {
     
     
     
+    
+    
 }
+
+
+

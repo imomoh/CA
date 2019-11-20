@@ -108,15 +108,37 @@ extension ViewController{
             let connerRadius = UIViewPropertyAnimator(duration: duration, curve: .linear) {
                 switch state{
                 case .collapsed:
-                    self.viewAdd.layer.cornerRadius = 20
-                case .expanded:
                     self.viewAdd.layer.cornerRadius = 0
+                case .expanded:
+                    self.viewAdd.layer.cornerRadius = 20
                     
                 }
             }
             
             connerRadius.startAnimation()
             runningAnimations.append(connerRadius)
+            
+            
+            
+            // animating self.view : expaneded the view reduces in width and vice versa
+            
+            
+            let selfViewAnimation = UIViewPropertyAnimator(duration: 0.45, curve: .linear) {
+                switch state{
+                case .collapsed:
+                    //return to original height
+                    self.mapView.transform = CGAffineTransform(scaleX: 1, y: 1)
+                    self.view.backgroundColor = .white
+                case .expanded:
+                    // reduce size
+                    self.mapView.transform = CGAffineTransform(scaleX: 0.97, y: 0.97)
+                    self.view.backgroundColor = .black
+                    
+                }
+            }
+            
+            selfViewAnimation.startAnimation()
+            runningAnimations.append(selfViewAnimation)
             
             //MARK:-  animate stack
             
