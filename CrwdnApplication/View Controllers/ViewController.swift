@@ -6,6 +6,11 @@
 //  Copyright © 2019 Ebuka Egbunam. All rights reserved.
 //
 
+protocol HandleMapSearch: class {
+    func dropPinZoomIn(placemark:MKPlacemark)
+}
+
+
 class Crwds{
     
     
@@ -77,6 +82,7 @@ import UIKit
 import MapKit
 import CoreLocation
 import Parse
+import AVFoundation
 
 class ViewController: UIViewController , UIGestureRecognizerDelegate {
     
@@ -90,6 +96,9 @@ class ViewController: UIViewController , UIGestureRecognizerDelegate {
     
     
     //variables
+    var tableView = UITableView()
+    var selectedPin: MKPlacemark?
+    var resultSearchController : UISearchController!
     var chnagingImage:UIImage? = nil
     let locationManager = CLLocationManager()
     let regionInMeters: Double = 1000
@@ -120,12 +129,7 @@ class ViewController: UIViewController , UIGestureRecognizerDelegate {
     
     
     @IBOutlet weak var animatedStack: UIStackView!
-    
-    
     @IBOutlet weak var topCrowds: UILabel!
-    
-    
-    
     @IBOutlet weak var viewAdd: UIView!
     
     
@@ -151,24 +155,42 @@ class ViewController: UIViewController , UIGestureRecognizerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let locationSearchTable = storyboard!.instantiateViewController(withIdentifier: "LocationSearchTable") as! LocationSearchTable
+        resultSearchController = UISearchController(searchResultsController: locationSearchTable)
+        resultSearchController.searchResultsUpdater = locationSearchTable
+        let searchBar = resultSearchController!.searchBar
+        searchBar.sizeToFit()
+        searchBar.placeholder = "Search for places"
+        navigationItem.titleView = resultSearchController?.searchBar
+        resultSearchController.hidesNavigationBarDuringPresentation = false
+        resultSearchController.dimsBackgroundDuringPresentation = true
+        definesPresentationContext = true
+        locationSearchTable.mapView = mapView
+        locationSearchTable.handleMapSearchDelegate = self
+        
+        
+        
+        
+        
         //setupCollectionVew()
         //setupAnotations()
         setupGesture()
         setUpCard()
         checkLocationServices()
-        searchAndStatusView.layer.borderColor = UIColor.red.cgColor
-        searchAndStatusView.layer.cornerRadius = 15
+        //searchAndStatusView.layer.borderColor = UIColor.red.cgColor
+        //searchAndStatusView.layer.cornerRadius = 15
         
         self.collectionView.register(UINib(nibName:"CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: cellIdentifier)
-        let userLattidude = (locationManager.location?.coordinate.latitude)!
+        let userLattidude =  (locationManager.location?.coordinate.latitude)!
         let userLongitude = (locationManager.location?.coordinate.longitude)!
         populate(currentlattitude: userLattidude, currentLongitude: userLongitude)
         
-//        let catPictureURL = "https://image.blockbusterbd.net/00416_main_image_04072019225805.png"
-//        let catImage = DownloadImage(imageURL: catPictureURL)
-//
-//        exampleImageView.image = catImage
-//
+        //        let catPictureURL = "https://image.blockbusterbd.net/00416_main_image_04072019225805.png"
+        //        let catImage = DownloadImage(imageURL: catPictureURL)
+        //
+        //        exampleImageView.image = catImage
+        //
         
     }
     
@@ -228,17 +250,17 @@ class ViewController: UIViewController , UIGestureRecognizerDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        navigationController?.setNavigationBarHidden(true, animated: false)
+        //navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        navigationController?.setNavigationBarHidden(false, animated: false)
+       // navigationController?.setNavigationBarHidden(false, animated: false)
     }
     
     // everything to do with location and map set up
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        navigationController?.setToolbarHidden(true, animated: true)
+       // navigationController?.setToolbarHidden(true, animated: true)
     }
     //MARK:- LOCATION SETTINGS
     
@@ -381,6 +403,8 @@ class ViewController: UIViewController , UIGestureRecognizerDelegate {
                         //check if image is a video or picture
                         
                         // get screenshot if its a video or get low quality picture
+                        
+                        //  this funtion is incomplete
                     }
                     
                 }
@@ -439,17 +463,133 @@ class ViewController: UIViewController , UIGestureRecognizerDelegate {
         downloadPicTask.resume()
         
         
-    
+        
         
     }
     
-    func DownloadVideo(){
+    func DownloadVideo(videoURL : String) -> String?{
+        /* takes a url from server side ,
+         downloads the data,
+         stores data in an optional string that willn be returned
+         */
+        let url = URL(string:videoURL)!
+        var  finalUrl :String? = nil
+
+        let task = URLSession.shared.downloadTask(with: url) { localURL, urlResponse, error in
+            if let localURL = localURL {
+                finalUrl = (localURL as! String)
+                
+                
+            }
+        }
+
+        task.resume()
+        return finalUrl
         
+    }
+    
+    
+    func takescreenshot(videoUrl : String?) -> UIImage?{
+        /*
+         takes video file storage url and creates a
+         screenshot of the video
+         */
+        var finalImage : UIImage? = nil
+        
+        if let videoUrl = videoUrl {
+            let videoUrl = URL(string: videoUrl)!
+            let asset = AVAsset(url: videoUrl )
+            let assetGenerator = AVAssetImageGenerator(asset: asset)
+            do{
+                let finalCgImage =  try assetGenerator.copyCGImage(at: CMTimeMake(value: 1, timescale: 60), actualTime: nil)
+                finalImage = UIImage(cgImage: finalCgImage)
+            }
+            catch let err{
+                print(err)
+            }
+            
+        }
+        
+        
+
+        return finalImage
+        
+        
+    }
+    
+    
+    func deleteFiles(fileUrl : URL){
+        /*
+         takes a file url
+         deletes the file with url
+         */
+        let fileURL = fileUrl
+
+        do {
+          try FileManager.default.removeItem(at: fileURL)
+                    
+        } catch {
+          fatalError("Couldn't remove file.")
+        }
+        
+    }
+    
+}
+
+extension ViewController : UITextFieldDelegate {
+    // comment this whole extention to silence the warning ; testing something here ; do not change the code here 
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        tableView.frame = CGRect(x: 20, y: view.frame.height, width: view.frame.width - 40 , height: view.frame.height - 170)
+        tableView.layer.cornerRadius = 5
+        tableView.register(UITableViewCell, forCellReuseIdentifier: "locationcell")
+        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.tag = 18
+        // the eroors are due to not setting the tableview delegate methods
+        // the tableview variables is on the variable place
+        
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        <#code#>
+    }
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        <#code#>
+    }
+    
+    func textFieldShouldClear(_ textField: UITextField) -> Bool {
+        <#code#>
     }
     
     
     
 }
+
+
+extension ViewController: HandleMapSearch {
+    
+    func dropPinZoomIn(placemark: MKPlacemark){
+        // cache the pin
+        selectedPin = placemark
+        // clear existing pins
+        mapView.removeAnnotations(mapView.annotations)
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = placemark.coordinate
+        annotation.title = placemark.name
+        
+        if let city = placemark.locality,
+            let state = placemark.administrativeArea {
+                annotation.subtitle = "\(city) \(state)"
+        }
+        
+        mapView.addAnnotation(annotation)
+        let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
+        let region = MKCoordinateRegion(center: placemark.coordinate, span: span)
+        mapView.setRegion(region, animated: true)
+    }
+    
+}
+
 
 
 

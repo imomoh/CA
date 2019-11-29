@@ -123,22 +123,22 @@ extension ViewController{
             // animating self.view : expaneded the view reduces in width and vice versa
             
             
-            let selfViewAnimation = UIViewPropertyAnimator(duration: 0.45, curve: .linear) {
-                switch state{
-                case .collapsed:
-                    //return to original height
-                    self.mapView.transform = CGAffineTransform(scaleX: 1, y: 1)
-                    self.view.backgroundColor = .white
-                case .expanded:
-                    // reduce size
-                    self.mapView.transform = CGAffineTransform(scaleX: 0.97, y: 0.97)
-                    self.view.backgroundColor = .black
-                    
-                }
-            }
-            
-            selfViewAnimation.startAnimation()
-            runningAnimations.append(selfViewAnimation)
+//            let selfViewAnimation = UIViewPropertyAnimator(duration: 0.45, curve: .linear) {
+//                switch state{
+//                case .collapsed:
+//                    //return to original height
+//                    self.mapView.transform = CGAffineTransform(scaleX: 1, y: 1)
+//                    self.view.backgroundColor = .white
+//                case .expanded:
+//                    // reduce size
+//                    self.mapView.transform = CGAffineTransform(scaleX: 0.97, y: 0.97)
+//                    self.view.backgroundColor = .black
+//
+//                }
+//            }
+//
+//            selfViewAnimation.startAnimation()
+//            runningAnimations.append(selfViewAnimation)
             
             //MARK:-  animate stack
             

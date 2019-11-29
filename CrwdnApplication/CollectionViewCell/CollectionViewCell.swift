@@ -49,7 +49,14 @@ class CollectionViewCell: UICollectionViewCell {
 //
         
         snapImage.layer.cornerRadius =  snapImage.frame.width / 2
-        snapImage.clipsToBounds = true 
+        snapImage.clipsToBounds = true
+        snapImage.backgroundColor = .gray
+        snapImage.layer.borderWidth = 1
+        snapImage.layer.borderColor = UIColor.white.cgColor
+        snapImage.layer.borderColor = UIColor.red.cgColor
+        
+        //snapImage.layer.addGradientBorder(colors: [UIColor.white,UIColor.white], width: 1)
+        //snapImage.layer.addGradientBorder(colors: [UIColor.red,UIColor.red], width: 1)
         
         
         
