@@ -35,6 +35,13 @@
 		432A3EA2233C55C4006A96F0 /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 432A3E9E233C55C4006A96F0 /* images.jpeg */; };
 		43354EE02342EC12002AFCB7 /* GMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43354EDF2342EC12002AFCB7 /* GMapController.swift */; };
 		434B072E238913340028BADF /* LocationSearchTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B072D238913340028BADF /* LocationSearchTable.swift */; };
+		435198482394590500C487E1 /* menuSliderBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43519845239458FA00C487E1 /* menuSliderBtn@2x.png */; };
+		435198492394590500C487E1 /* menuSliderBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 43519846239458FD00C487E1 /* menuSliderBtn.png */; };
+		4351984A2394590500C487E1 /* menuSliderBtn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 435198472394590400C487E1 /* menuSliderBtn@3x.png */; };
+		4351984C23945A1500C487E1 /* menuBackgroundView .swift in Sources */ = {isa = PBXBuildFile; fileRef = 4351984B23945A1500C487E1 /* menuBackgroundView .swift */; };
+		4351984D2394631F00C487E1 /* menuBackgroundView .swift in Sources */ = {isa = PBXBuildFile; fileRef = 4351984B23945A1500C487E1 /* menuBackgroundView .swift */; };
+		4351984E2394631F00C487E1 /* menuBackgroundView .swift in Sources */ = {isa = PBXBuildFile; fileRef = 4351984B23945A1500C487E1 /* menuBackgroundView .swift */; };
+		43519850239463BF00C487E1 /* cardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4351984F239463BF00C487E1 /* cardView.swift */; };
 		4372DB2A230F162B00972AB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4372DB29230F162B00972AB8 /* AppDelegate.swift */; };
 		4372DB2C230F162B00972AB8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4372DB2B230F162B00972AB8 /* ViewController.swift */; };
 		4372DB32230F162B00972AB8 /* CrwdnApplication.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4372DB30230F162B00972AB8 /* CrwdnApplication.xcdatamodeld */; };
@@ -130,6 +137,11 @@
 		432A3E9E233C55C4006A96F0 /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpeg; sourceTree = "<group>"; };
 		43354EDF2342EC12002AFCB7 /* GMapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GMapController.swift; path = CrwdnApplication/GMapController.swift; sourceTree = SOURCE_ROOT; };
 		434B072D238913340028BADF /* LocationSearchTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchTable.swift; sourceTree = "<group>"; };
+		43519845239458FA00C487E1 /* menuSliderBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menuSliderBtn@2x.png"; sourceTree = "<group>"; };
+		43519846239458FD00C487E1 /* menuSliderBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuSliderBtn.png; sourceTree = "<group>"; };
+		435198472394590400C487E1 /* menuSliderBtn@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menuSliderBtn@3x.png"; sourceTree = "<group>"; };
+		4351984B23945A1500C487E1 /* menuBackgroundView .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "menuBackgroundView .swift"; sourceTree = "<group>"; };
+		4351984F239463BF00C487E1 /* cardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardView.swift; sourceTree = "<group>"; };
 		4372DB26230F162B00972AB8 /* CrwdnApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrwdnApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4372DB29230F162B00972AB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4372DB2B230F162B00972AB8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -236,6 +248,9 @@
 			children = (
 				43D65B4C235EA67B00E391DE /* CRWDLOGO.png */,
 				43D65B4D235EA67B00E391DE /* CRWDLOGO@2x.png */,
+				43519846239458FD00C487E1 /* menuSliderBtn.png */,
+				43519845239458FA00C487E1 /* menuSliderBtn@2x.png */,
+				435198472394590400C487E1 /* menuSliderBtn@3x.png */,
 				43D65B4B235EA67A00E391DE /* CRWDLOGO@3x.png */,
 				4372DB5E230F168A00972AB8 /* Splash Screen – delete this bruh@3x.png */,
 				4372DB66230F16BD00972AB8 /* I WOULD LIKE TO CHANGE MY MIND@2x.png */,
@@ -344,6 +359,8 @@
 			isa = PBXGroup;
 			children = (
 				4372DB5A230F166C00972AB8 /* Main.storyboard */,
+				4351984B23945A1500C487E1 /* menuBackgroundView .swift */,
+				4351984F239463BF00C487E1 /* cardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -480,6 +497,7 @@
 				432A3EA1233C55C4006A96F0 /* images.png in Resources */,
 				4372DB77230F174400972AB8 /* DENY button@3x.png in Resources */,
 				4312201D2351F3BC00E6CE8D /* positon@3x.png in Resources */,
+				435198492394590500C487E1 /* menuSliderBtn.png in Resources */,
 				431220302351FA2200E6CE8D /* profileMenu.png in Resources */,
 				4312201F2351F3BC00E6CE8D /* positon@2x.png in Resources */,
 				4372DB7B230F176000972AB8 /* Rectangle 46@3x.png in Resources */,
@@ -487,6 +505,7 @@
 				4312202A2351F8C700E6CE8D /* slidupbar.png in Resources */,
 				432A3EA2233C55C4006A96F0 /* images.jpeg in Resources */,
 				43DD1E142375747F00822948 /* GoogleService-Info.plist in Resources */,
+				4351984A2394590500C487E1 /* menuSliderBtn@3x.png in Resources */,
 				43D65B4A235E8B9A00E391DE /* CollectionViewCell.xib in Resources */,
 				4372DB63230F16B600972AB8 /* CRWDN NEEDS YOUR LOCATION TO BE A FUNCTIONAL APP@2x.png in Resources */,
 				4312201E2351F3BC00E6CE8D /* positon.png in Resources */,
@@ -504,6 +523,7 @@
 				43D65B4E235EA67B00E391DE /* CRWDLOGO@3x.png in Resources */,
 				4312202B2351F8C700E6CE8D /* slidehandleBar@3x.png in Resources */,
 				4372DB5F230F168A00972AB8 /* Splash Screen – delete this bruh@3x.png in Resources */,
+				435198482394590500C487E1 /* menuSliderBtn@2x.png in Resources */,
 				432A3EA0233C55C4006A96F0 /* images-3.png in Resources */,
 				4312202F2351FA2200E6CE8D /* profileMenu@2x.png in Resources */,
 				431220172351F17B00E6CE8D /* camera.png in Resources */,
@@ -615,12 +635,14 @@
 			files = (
 				434B072E238913340028BADF /* LocationSearchTable.swift in Sources */,
 				4372DB2C230F162B00972AB8 /* ViewController.swift in Sources */,
+				4351984C23945A1500C487E1 /* menuBackgroundView .swift in Sources */,
 				430D2D38231DFF1C005510A2 /* CameraViewController.swift in Sources */,
 				43D65B49235E8B9A00E391DE /* CollectionViewCell.swift in Sources */,
 				43354EE02342EC12002AFCB7 /* GMapController.swift in Sources */,
 				4372DB2A230F162B00972AB8 /* AppDelegate.swift in Sources */,
 				4396162D23680361001331FC /* SlideViewAnimations.swift in Sources */,
 				4396162F236803F3001331FC /* CollectionViewExtention.swift in Sources */,
+				43519850239463BF00C487E1 /* cardView.swift in Sources */,
 				4328015323511249004C5725 /* CardViewController.swift in Sources */,
 				43C5E4992342F25800D06BCE /* GMapViewController.swift in Sources */,
 				4396163123680448001331FC /* LocationExtention.swift in Sources */,
@@ -634,6 +656,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4328015A235159F0004C5725 /* ProfileViewController.swift in Sources */,
+				4351984D2394631F00C487E1 /* menuBackgroundView .swift in Sources */,
 				4372DB42230F162C00972AB8 /* CrwdnApplicationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -643,6 +666,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43280159235159F0004C5725 /* ProfileViewController.swift in Sources */,
+				4351984E2394631F00C487E1 /* menuBackgroundView .swift in Sources */,
 				4372DB4D230F162C00972AB8 /* CrwdnApplicationUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

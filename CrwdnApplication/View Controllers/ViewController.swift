@@ -156,19 +156,19 @@ class ViewController: UIViewController , UIGestureRecognizerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let locationSearchTable = storyboard!.instantiateViewController(withIdentifier: "LocationSearchTable") as! LocationSearchTable
-        resultSearchController = UISearchController(searchResultsController: locationSearchTable)
-        resultSearchController.searchResultsUpdater = locationSearchTable
-        let searchBar = resultSearchController!.searchBar
-        searchBar.sizeToFit()
-        searchBar.placeholder = "Search for places"
-        navigationItem.titleView = resultSearchController?.searchBar
-        resultSearchController.hidesNavigationBarDuringPresentation = false
-        resultSearchController.dimsBackgroundDuringPresentation = true
-        definesPresentationContext = true
-        locationSearchTable.mapView = mapView
-        locationSearchTable.handleMapSearchDelegate = self
-        
+//        let locationSearchTable = storyboard!.instantiateViewController(withIdentifier: "LocationSearchTable") as! LocationSearchTable
+//        resultSearchController = UISearchController(searchResultsController: locationSearchTable)
+//        resultSearchController.searchResultsUpdater = locationSearchTable
+//        let searchBar = resultSearchController!.searchBar
+//        searchBar.sizeToFit()
+//        searchBar.placeholder = "Search for places"
+//        navigationItem.titleView = resultSearchController?.searchBar
+//        resultSearchController.hidesNavigationBarDuringPresentation = false
+//        resultSearchController.dimsBackgroundDuringPresentation = true
+//        definesPresentationContext = true
+//        locationSearchTable.mapView = mapView
+//        locationSearchTable.handleMapSearchDelegate = self
+//
         
         
         
@@ -230,6 +230,9 @@ class ViewController: UIViewController , UIGestureRecognizerDelegate {
     func setupViewLook(){
         
         viewAdd.layer.cornerRadius = 20
+        viewAdd.layer.shadowOffset = CGSize(width: 0, height: -3)
+        viewAdd.layer.shadowOpacity = 0.1
+        viewAdd.layer.shadowRadius = 1
         gestureView.layer.cornerRadius = 20
         gestureView.layer.shadowRadius = 1
         
@@ -250,11 +253,11 @@ class ViewController: UIViewController , UIGestureRecognizerDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        //navigationController?.setNavigationBarHidden(true, animated: false)
+        navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-       // navigationController?.setNavigationBarHidden(false, animated: false)
+        navigationController?.setNavigationBarHidden(false, animated: false)
     }
     
     // everything to do with location and map set up
@@ -536,34 +539,34 @@ class ViewController: UIViewController , UIGestureRecognizerDelegate {
     
 }
 
-extension ViewController : UITextFieldDelegate {
-    // comment this whole extention to silence the warning ; testing something here ; do not change the code here 
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        tableView.frame = CGRect(x: 20, y: view.frame.height, width: view.frame.width - 40 , height: view.frame.height - 170)
-        tableView.layer.cornerRadius = 5
-        tableView.register(UITableViewCell, forCellReuseIdentifier: "locationcell")
-        tableView.dataSource = self
-        tableView.delegate = self
-        tableView.tag = 18
-        // the eroors are due to not setting the tableview delegate methods
-        // the tableview variables is on the variable place
-        
-    }
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        <#code#>
-    }
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        <#code#>
-    }
-    
-    func textFieldShouldClear(_ textField: UITextField) -> Bool {
-        <#code#>
-    }
-    
-    
-    
-}
+//extension ViewController : UITextFieldDelegate {
+//    // comment this whole extention to silence the warning ; testing something here ; do not change the code here
+//    func textFieldDidBeginEditing(_ textField: UITextField) {
+//        tableView.frame = CGRect(x: 20, y: view.frame.height, width: view.frame.width - 40 , height: view.frame.height - 170)
+//        tableView.layer.cornerRadius = 5
+//        tableView.register(UITableViewCell, forCellReuseIdentifier: "locationcell")
+//        tableView.dataSource = self
+//        tableView.delegate = self
+//        tableView.tag = 18
+//        // the eroors are due to not setting the tableview delegate methods
+//        // the tableview variables is on the variable place
+//
+//    }
+//
+//    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+//        <#code#>
+//    }
+//    func textFieldDidEndEditing(_ textField: UITextField) {
+//        <#code#>
+//    }
+//
+//    func textFieldShouldClear(_ textField: UITextField) -> Bool {
+//        <#code#>
+//    }
+//
+//
+//
+//}
 
 
 extension ViewController: HandleMapSearch {
