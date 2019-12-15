@@ -181,10 +181,10 @@ class ViewController: UIViewController , UIGestureRecognizerDelegate {
         //searchAndStatusView.layer.borderColor = UIColor.red.cgColor
         //searchAndStatusView.layer.cornerRadius = 15
         
-        self.collectionView.register(UINib(nibName:"CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: cellIdentifier)
-        let userLattidude =  (locationManager.location?.coordinate.latitude)!
-        let userLongitude = (locationManager.location?.coordinate.longitude)!
-        populate(currentlattitude: userLattidude, currentLongitude: userLongitude)
+       // self.collectionView.register(UINib(nibName:"CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: cellIdentifier)
+       // let userLattidude =  (locationManager.location?.coordinate.latitude)!
+      // let userLongitude = (locationManager.location?.coordinate.longitude)!
+     //   populate(currentlattitude: userLattidude, currentLongitude: userLongitude)
         
         //        let catPictureURL = "https://image.blockbusterbd.net/00416_main_image_04072019225805.png"
         //        let catImage = DownloadImage(imageURL: catPictureURL)

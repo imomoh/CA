@@ -9,21 +9,6 @@
 /* Begin PBXBuildFile section */
 		0934C73B60408FD65280FDF8 /* Pods_CrwdnApplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F3855BD4BC1B3D703662565 /* Pods_CrwdnApplication.framework */; };
 		430D2D38231DFF1C005510A2 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430D2D37231DFF1C005510A2 /* CameraViewController.swift */; };
-		431220172351F17B00E6CE8D /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 431220142351F17A00E6CE8D /* camera.png */; };
-		431220182351F17B00E6CE8D /* camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 431220152351F17B00E6CE8D /* camera@2x.png */; };
-		431220192351F17B00E6CE8D /* camera@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 431220162351F17B00E6CE8D /* camera@3x.png */; };
-		4312201D2351F3BC00E6CE8D /* positon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4312201A2351F3BC00E6CE8D /* positon@3x.png */; };
-		4312201E2351F3BC00E6CE8D /* positon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4312201B2351F3BC00E6CE8D /* positon.png */; };
-		4312201F2351F3BC00E6CE8D /* positon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4312201C2351F3BC00E6CE8D /* positon@2x.png */; };
-		431220262351F8C700E6CE8D /* slidehandleBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 431220202351F8C600E6CE8D /* slidehandleBar@2x.png */; };
-		431220272351F8C700E6CE8D /* slidehandleBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 431220212351F8C600E6CE8D /* slidehandleBar.png */; };
-		431220282351F8C700E6CE8D /* slidupbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 431220222351F8C600E6CE8D /* slidupbar@2x.png */; };
-		431220292351F8C700E6CE8D /* slidupbar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 431220232351F8C600E6CE8D /* slidupbar@3x.png */; };
-		4312202A2351F8C700E6CE8D /* slidupbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 431220242351F8C600E6CE8D /* slidupbar.png */; };
-		4312202B2351F8C700E6CE8D /* slidehandleBar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 431220252351F8C600E6CE8D /* slidehandleBar@3x.png */; };
-		4312202F2351FA2200E6CE8D /* profileMenu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4312202C2351FA2100E6CE8D /* profileMenu@2x.png */; };
-		431220302351FA2200E6CE8D /* profileMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 4312202D2351FA2100E6CE8D /* profileMenu.png */; };
-		431220312351FA2200E6CE8D /* profileMenu@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4312202E2351FA2200E6CE8D /* profileMenu@3x.png */; };
 		4328015323511249004C5725 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328015123511249004C5725 /* CardViewController.swift */; };
 		4328015423511249004C5725 /* CardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4328015223511249004C5725 /* CardViewController.xib */; };
 		43280156235158F3004C5725 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43280155235158F3004C5725 /* ProfileViewController.swift */; };
@@ -33,7 +18,6 @@
 		432A3EA0233C55C4006A96F0 /* images-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 432A3E9C233C55C4006A96F0 /* images-3.png */; };
 		432A3EA1233C55C4006A96F0 /* images.png in Resources */ = {isa = PBXBuildFile; fileRef = 432A3E9D233C55C4006A96F0 /* images.png */; };
 		432A3EA2233C55C4006A96F0 /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 432A3E9E233C55C4006A96F0 /* images.jpeg */; };
-		43354EE02342EC12002AFCB7 /* GMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43354EDF2342EC12002AFCB7 /* GMapController.swift */; };
 		434B072E238913340028BADF /* LocationSearchTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B072D238913340028BADF /* LocationSearchTable.swift */; };
 		435198482394590500C487E1 /* menuSliderBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43519845239458FA00C487E1 /* menuSliderBtn@2x.png */; };
 		435198492394590500C487E1 /* menuSliderBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 43519846239458FD00C487E1 /* menuSliderBtn.png */; };
@@ -86,10 +70,46 @@
 		43C5E4992342F25800D06BCE /* GMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C5E4972342F25800D06BCE /* GMapViewController.swift */; };
 		43D65B49235E8B9A00E391DE /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D65B47235E8B9A00E391DE /* CollectionViewCell.swift */; };
 		43D65B4A235E8B9A00E391DE /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43D65B48235E8B9A00E391DE /* CollectionViewCell.xib */; };
-		43D65B4E235EA67B00E391DE /* CRWDLOGO@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43D65B4B235EA67A00E391DE /* CRWDLOGO@3x.png */; };
-		43D65B4F235EA67B00E391DE /* CRWDLOGO.png in Resources */ = {isa = PBXBuildFile; fileRef = 43D65B4C235EA67B00E391DE /* CRWDLOGO.png */; };
-		43D65B50235EA67B00E391DE /* CRWDLOGO@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43D65B4D235EA67B00E391DE /* CRWDLOGO@2x.png */; };
 		43DD1E142375747F00822948 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43DD1E132375747E00822948 /* GoogleService-Info.plist */; };
+		593A4CAE239C55D70088EF76 /* positon.png in Resources */ = {isa = PBXBuildFile; fileRef = 593A4CAD239C55D70088EF76 /* positon.png */; };
+		593A4CD5239C568D0088EF76 /* positon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 593A4CAF239C568A0088EF76 /* positon@3x.png */; };
+		593A4CD6239C568D0088EF76 /* CRWDLOGO@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 593A4CB0239C568A0088EF76 /* CRWDLOGO@2x.png */; };
+		593A4CD7239C568D0088EF76 /* slidehandleBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 593A4CB1239C568B0088EF76 /* slidehandleBar.png */; };
+		593A4CD8239C568D0088EF76 /* button DENY .png in Resources */ = {isa = PBXBuildFile; fileRef = 593A4CB2239C568B0088EF76 /* button DENY .png */; };
+		593A4CD9239C568D0088EF76 /* menuSliderBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 593A4CB3239C568B0088EF76 /* menuSliderBtn.png */; };
+		593A4CDA239C568D0088EF76 /* slidupbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 593A4CB4239C568B0088EF76 /* slidupbar.png */; };
+		593A4CDB239C568D0088EF76 /* profileMenu@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 593A4CB5239C568B0088EF76 /* profileMenu@3x.png */; };
+		593A4CDC239C568D0088EF76 /* CRWDLOGO.png in Resources */ = {isa = PBXBuildFile; fileRef = 593A4CB6239C568B0088EF76 /* CRWDLOGO.png */; };
+		593A4CDD239C568D0088EF76 /* slidupbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 593A4CB7239C568B0088EF76 /* slidupbar@2x.png */; };
+		593A4CDE239C568D0088EF76 /* camera@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 593A4CB8239C568B0088EF76 /* camera@3x.png */; };
+		593A4CDF239C568D0088EF76 /* camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 593A4CB9239C568B0088EF76 /* camera@2x.png */; };
+		593A4CE0239C568D0088EF76 /* I WOULD LIKE TO CHANGE MY MIND@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 593A4CBA239C568B0088EF76 /* I WOULD LIKE TO CHANGE MY MIND@2x.png */; };
+		593A4CE1239C568D0088EF76 /* menuSliderBtn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 593A4CBB239C568B0088EF76 /* menuSliderBtn@3x.png */; };
+		593A4CE2239C568D0088EF76 /* slidupbar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 593A4CBC239C568B0088EF76 /* slidupbar@3x.png */; };
+		593A4CE3239C568D0088EF76 /* CRWND WILL LIKE TO ACCESS YOU LOCATION@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 593A4CBD239C568B0088EF76 /* CRWND WILL LIKE TO ACCESS YOU LOCATION@2x.png */; };
+		593A4CE4239C568D0088EF76 /* Group 25@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 593A4CBE239C568B0088EF76 /* Group 25@3x.png */; };
+		593A4CE5239C568D0088EF76 /* DENY button@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 593A4CBF239C568B0088EF76 /* DENY button@3x.png */; };
+		593A4CE6239C568D0088EF76 /* positon.png in Resources */ = {isa = PBXBuildFile; fileRef = 593A4CC0239C568B0088EF76 /* positon.png */; };
+		593A4CE7239C568D0088EF76 /* Symbol @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 593A4CC1239C568B0088EF76 /* Symbol @3x.png */; };
+		593A4CE8239C568D0088EF76 /* CRWDLOGO@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 593A4CC2239C568C0088EF76 /* CRWDLOGO@3x.png */; };
+		593A4CE9239C568D0088EF76 /* images.png in Resources */ = {isa = PBXBuildFile; fileRef = 593A4CC3239C568C0088EF76 /* images.png */; };
+		593A4CEA239C568D0088EF76 /* Group 25@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 593A4CC4239C568C0088EF76 /* Group 25@2x.png */; };
+		593A4CEB239C568D0088EF76 /* profileMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 593A4CC5239C568C0088EF76 /* profileMenu.png */; };
+		593A4CEC239C568D0088EF76 /* button1.png in Resources */ = {isa = PBXBuildFile; fileRef = 593A4CC6239C568C0088EF76 /* button1.png */; };
+		593A4CED239C568D0088EF76 /* Splash Screen – delete this bruh@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 593A4CC7239C568C0088EF76 /* Splash Screen – delete this bruh@3x.png */; };
+		593A4CEE239C568D0088EF76 /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 593A4CC8239C568C0088EF76 /* images.jpeg */; };
+		593A4CEF239C568D0088EF76 /* CRWDN NEEDS YOUR LOCATION TO BE A FUNCTIONAL APP@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 593A4CC9239C568C0088EF76 /* CRWDN NEEDS YOUR LOCATION TO BE A FUNCTIONAL APP@2x.png */; };
+		593A4CF0239C568D0088EF76 /* positon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 593A4CCA239C568C0088EF76 /* positon@2x.png */; };
+		593A4CF1239C568D0088EF76 /* Rectangle 46@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 593A4CCB239C568C0088EF76 /* Rectangle 46@3x.png */; };
+		593A4CF2239C568D0088EF76 /* Splash Screen – 7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 593A4CCC239C568C0088EF76 /* Splash Screen – 7@2x.png */; };
+		593A4CF3239C568D0088EF76 /* images-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 593A4CCD239C568C0088EF76 /* images-2.png */; };
+		593A4CF4239C568D0088EF76 /* profileMenu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 593A4CCE239C568C0088EF76 /* profileMenu@2x.png */; };
+		593A4CF5239C568D0088EF76 /* Group 25.png in Resources */ = {isa = PBXBuildFile; fileRef = 593A4CCF239C568C0088EF76 /* Group 25.png */; };
+		593A4CF6239C568D0088EF76 /* slidehandleBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 593A4CD0239C568C0088EF76 /* slidehandleBar@2x.png */; };
+		593A4CF7239C568D0088EF76 /* menuSliderBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 593A4CD1239C568C0088EF76 /* menuSliderBtn@2x.png */; };
+		593A4CF8239C568D0088EF76 /* slidehandleBar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 593A4CD2239C568C0088EF76 /* slidehandleBar@3x.png */; };
+		593A4CF9239C568D0088EF76 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 593A4CD3239C568C0088EF76 /* camera.png */; };
+		593A4CFA239C568D0088EF76 /* images-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 593A4CD4239C568C0088EF76 /* images-3.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,21 +133,6 @@
 		017ADF120E1E1B05CAB60DE5 /* Pods-CrwdnApplication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrwdnApplication.debug.xcconfig"; path = "Target Support Files/Pods-CrwdnApplication/Pods-CrwdnApplication.debug.xcconfig"; sourceTree = "<group>"; };
 		0F3855BD4BC1B3D703662565 /* Pods_CrwdnApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CrwdnApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		430D2D37231DFF1C005510A2 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
-		431220142351F17A00E6CE8D /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = SOURCE_ROOT; };
-		431220152351F17B00E6CE8D /* camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera@2x.png"; sourceTree = SOURCE_ROOT; };
-		431220162351F17B00E6CE8D /* camera@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera@3x.png"; sourceTree = SOURCE_ROOT; };
-		4312201A2351F3BC00E6CE8D /* positon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "positon@3x.png"; sourceTree = SOURCE_ROOT; };
-		4312201B2351F3BC00E6CE8D /* positon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = positon.png; sourceTree = SOURCE_ROOT; };
-		4312201C2351F3BC00E6CE8D /* positon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "positon@2x.png"; sourceTree = SOURCE_ROOT; };
-		431220202351F8C600E6CE8D /* slidehandleBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "slidehandleBar@2x.png"; path = "CrwdnApplication/slidehandleBar@2x.png"; sourceTree = SOURCE_ROOT; };
-		431220212351F8C600E6CE8D /* slidehandleBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = slidehandleBar.png; path = CrwdnApplication/slidehandleBar.png; sourceTree = SOURCE_ROOT; };
-		431220222351F8C600E6CE8D /* slidupbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "slidupbar@2x.png"; path = "CrwdnApplication/slidupbar@2x.png"; sourceTree = SOURCE_ROOT; };
-		431220232351F8C600E6CE8D /* slidupbar@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "slidupbar@3x.png"; path = "CrwdnApplication/slidupbar@3x.png"; sourceTree = SOURCE_ROOT; };
-		431220242351F8C600E6CE8D /* slidupbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = slidupbar.png; path = CrwdnApplication/slidupbar.png; sourceTree = SOURCE_ROOT; };
-		431220252351F8C600E6CE8D /* slidehandleBar@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "slidehandleBar@3x.png"; path = "CrwdnApplication/slidehandleBar@3x.png"; sourceTree = SOURCE_ROOT; };
-		4312202C2351FA2100E6CE8D /* profileMenu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profileMenu@2x.png"; sourceTree = SOURCE_ROOT; };
-		4312202D2351FA2100E6CE8D /* profileMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profileMenu.png; sourceTree = SOURCE_ROOT; };
-		4312202E2351FA2200E6CE8D /* profileMenu@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profileMenu@3x.png"; sourceTree = SOURCE_ROOT; };
 		4328015123511249004C5725 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		4328015223511249004C5725 /* CardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardViewController.xib; sourceTree = "<group>"; };
 		43280155235158F3004C5725 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -135,7 +140,6 @@
 		432A3E9C233C55C4006A96F0 /* images-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "images-3.png"; sourceTree = "<group>"; };
 		432A3E9D233C55C4006A96F0 /* images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = images.png; sourceTree = "<group>"; };
 		432A3E9E233C55C4006A96F0 /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpeg; sourceTree = "<group>"; };
-		43354EDF2342EC12002AFCB7 /* GMapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GMapController.swift; path = CrwdnApplication/GMapController.swift; sourceTree = SOURCE_ROOT; };
 		434B072D238913340028BADF /* LocationSearchTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchTable.swift; sourceTree = "<group>"; };
 		43519845239458FA00C487E1 /* menuSliderBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menuSliderBtn@2x.png"; sourceTree = "<group>"; };
 		43519846239458FD00C487E1 /* menuSliderBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuSliderBtn.png; sourceTree = "<group>"; };
@@ -172,10 +176,46 @@
 		43C5E4972342F25800D06BCE /* GMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMapViewController.swift; sourceTree = "<group>"; };
 		43D65B47235E8B9A00E391DE /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		43D65B48235E8B9A00E391DE /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
-		43D65B4B235EA67A00E391DE /* CRWDLOGO@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CRWDLOGO@3x.png"; path = "CrwdnApplication/CRWDLOGO@3x.png"; sourceTree = SOURCE_ROOT; };
-		43D65B4C235EA67B00E391DE /* CRWDLOGO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CRWDLOGO.png; path = CrwdnApplication/CRWDLOGO.png; sourceTree = SOURCE_ROOT; };
-		43D65B4D235EA67B00E391DE /* CRWDLOGO@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CRWDLOGO@2x.png"; path = "CrwdnApplication/CRWDLOGO@2x.png"; sourceTree = SOURCE_ROOT; };
 		43DD1E132375747E00822948 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		593A4CAD239C55D70088EF76 /* positon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = positon.png; sourceTree = "<group>"; };
+		593A4CAF239C568A0088EF76 /* positon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "positon@3x.png"; sourceTree = "<group>"; };
+		593A4CB0239C568A0088EF76 /* CRWDLOGO@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CRWDLOGO@2x.png"; sourceTree = "<group>"; };
+		593A4CB1239C568B0088EF76 /* slidehandleBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slidehandleBar.png; sourceTree = "<group>"; };
+		593A4CB2239C568B0088EF76 /* button DENY .png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button DENY .png"; sourceTree = "<group>"; };
+		593A4CB3239C568B0088EF76 /* menuSliderBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuSliderBtn.png; sourceTree = "<group>"; };
+		593A4CB4239C568B0088EF76 /* slidupbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slidupbar.png; sourceTree = "<group>"; };
+		593A4CB5239C568B0088EF76 /* profileMenu@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profileMenu@3x.png"; sourceTree = "<group>"; };
+		593A4CB6239C568B0088EF76 /* CRWDLOGO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CRWDLOGO.png; sourceTree = "<group>"; };
+		593A4CB7239C568B0088EF76 /* slidupbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slidupbar@2x.png"; sourceTree = "<group>"; };
+		593A4CB8239C568B0088EF76 /* camera@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera@3x.png"; sourceTree = "<group>"; };
+		593A4CB9239C568B0088EF76 /* camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera@2x.png"; sourceTree = "<group>"; };
+		593A4CBA239C568B0088EF76 /* I WOULD LIKE TO CHANGE MY MIND@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "I WOULD LIKE TO CHANGE MY MIND@2x.png"; sourceTree = "<group>"; };
+		593A4CBB239C568B0088EF76 /* menuSliderBtn@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menuSliderBtn@3x.png"; sourceTree = "<group>"; };
+		593A4CBC239C568B0088EF76 /* slidupbar@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slidupbar@3x.png"; sourceTree = "<group>"; };
+		593A4CBD239C568B0088EF76 /* CRWND WILL LIKE TO ACCESS YOU LOCATION@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CRWND WILL LIKE TO ACCESS YOU LOCATION@2x.png"; sourceTree = "<group>"; };
+		593A4CBE239C568B0088EF76 /* Group 25@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Group 25@3x.png"; sourceTree = "<group>"; };
+		593A4CBF239C568B0088EF76 /* DENY button@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DENY button@3x.png"; sourceTree = "<group>"; };
+		593A4CC0239C568B0088EF76 /* positon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = positon.png; sourceTree = "<group>"; };
+		593A4CC1239C568B0088EF76 /* Symbol @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Symbol @3x.png"; sourceTree = "<group>"; };
+		593A4CC2239C568C0088EF76 /* CRWDLOGO@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CRWDLOGO@3x.png"; sourceTree = "<group>"; };
+		593A4CC3239C568C0088EF76 /* images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = images.png; sourceTree = "<group>"; };
+		593A4CC4239C568C0088EF76 /* Group 25@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Group 25@2x.png"; sourceTree = "<group>"; };
+		593A4CC5239C568C0088EF76 /* profileMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profileMenu.png; sourceTree = "<group>"; };
+		593A4CC6239C568C0088EF76 /* button1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button1.png; sourceTree = "<group>"; };
+		593A4CC7239C568C0088EF76 /* Splash Screen – delete this bruh@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Splash Screen – delete this bruh@3x.png"; sourceTree = "<group>"; };
+		593A4CC8239C568C0088EF76 /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpeg; sourceTree = "<group>"; };
+		593A4CC9239C568C0088EF76 /* CRWDN NEEDS YOUR LOCATION TO BE A FUNCTIONAL APP@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CRWDN NEEDS YOUR LOCATION TO BE A FUNCTIONAL APP@2x.png"; sourceTree = "<group>"; };
+		593A4CCA239C568C0088EF76 /* positon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "positon@2x.png"; sourceTree = "<group>"; };
+		593A4CCB239C568C0088EF76 /* Rectangle 46@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle 46@3x.png"; sourceTree = "<group>"; };
+		593A4CCC239C568C0088EF76 /* Splash Screen – 7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Splash Screen – 7@2x.png"; sourceTree = "<group>"; };
+		593A4CCD239C568C0088EF76 /* images-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "images-2.png"; sourceTree = "<group>"; };
+		593A4CCE239C568C0088EF76 /* profileMenu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profileMenu@2x.png"; sourceTree = "<group>"; };
+		593A4CCF239C568C0088EF76 /* Group 25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Group 25.png"; sourceTree = "<group>"; };
+		593A4CD0239C568C0088EF76 /* slidehandleBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slidehandleBar@2x.png"; sourceTree = "<group>"; };
+		593A4CD1239C568C0088EF76 /* menuSliderBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menuSliderBtn@2x.png"; sourceTree = "<group>"; };
+		593A4CD2239C568C0088EF76 /* slidehandleBar@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slidehandleBar@3x.png"; sourceTree = "<group>"; };
+		593A4CD3239C568C0088EF76 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
+		593A4CD4239C568C0088EF76 /* images-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "images-3.png"; sourceTree = "<group>"; };
 		EFA8122ED1288952C13E641B /* Pods-CrwdnApplication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrwdnApplication.release.xcconfig"; path = "Target Support Files/Pods-CrwdnApplication/Pods-CrwdnApplication.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -246,12 +286,48 @@
 		43354EDE2342B2AC002AFCB7 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				43D65B4C235EA67B00E391DE /* CRWDLOGO.png */,
-				43D65B4D235EA67B00E391DE /* CRWDLOGO@2x.png */,
+				593A4CB2239C568B0088EF76 /* button DENY .png */,
+				593A4CC6239C568C0088EF76 /* button1.png */,
+				593A4CD3239C568C0088EF76 /* camera.png */,
+				593A4CB9239C568B0088EF76 /* camera@2x.png */,
+				593A4CB8239C568B0088EF76 /* camera@3x.png */,
+				593A4CB6239C568B0088EF76 /* CRWDLOGO.png */,
+				593A4CB0239C568A0088EF76 /* CRWDLOGO@2x.png */,
+				593A4CC2239C568C0088EF76 /* CRWDLOGO@3x.png */,
+				593A4CC9239C568C0088EF76 /* CRWDN NEEDS YOUR LOCATION TO BE A FUNCTIONAL APP@2x.png */,
+				593A4CBD239C568B0088EF76 /* CRWND WILL LIKE TO ACCESS YOU LOCATION@2x.png */,
+				593A4CBF239C568B0088EF76 /* DENY button@3x.png */,
+				593A4CCF239C568C0088EF76 /* Group 25.png */,
+				593A4CC4239C568C0088EF76 /* Group 25@2x.png */,
+				593A4CBE239C568B0088EF76 /* Group 25@3x.png */,
+				593A4CBA239C568B0088EF76 /* I WOULD LIKE TO CHANGE MY MIND@2x.png */,
+				593A4CCD239C568C0088EF76 /* images-2.png */,
+				593A4CD4239C568C0088EF76 /* images-3.png */,
+				593A4CC8239C568C0088EF76 /* images.jpeg */,
+				593A4CC3239C568C0088EF76 /* images.png */,
+				593A4CB3239C568B0088EF76 /* menuSliderBtn.png */,
+				593A4CD1239C568C0088EF76 /* menuSliderBtn@2x.png */,
+				593A4CBB239C568B0088EF76 /* menuSliderBtn@3x.png */,
+				593A4CC0239C568B0088EF76 /* positon.png */,
+				593A4CCA239C568C0088EF76 /* positon@2x.png */,
+				593A4CAF239C568A0088EF76 /* positon@3x.png */,
+				593A4CC5239C568C0088EF76 /* profileMenu.png */,
+				593A4CCE239C568C0088EF76 /* profileMenu@2x.png */,
+				593A4CB5239C568B0088EF76 /* profileMenu@3x.png */,
+				593A4CCB239C568C0088EF76 /* Rectangle 46@3x.png */,
+				593A4CB1239C568B0088EF76 /* slidehandleBar.png */,
+				593A4CD0239C568C0088EF76 /* slidehandleBar@2x.png */,
+				593A4CD2239C568C0088EF76 /* slidehandleBar@3x.png */,
+				593A4CB4239C568B0088EF76 /* slidupbar.png */,
+				593A4CB7239C568B0088EF76 /* slidupbar@2x.png */,
+				593A4CBC239C568B0088EF76 /* slidupbar@3x.png */,
+				593A4CCC239C568C0088EF76 /* Splash Screen – 7@2x.png */,
+				593A4CC7239C568C0088EF76 /* Splash Screen – delete this bruh@3x.png */,
+				593A4CC1239C568B0088EF76 /* Symbol @3x.png */,
+				593A4CAD239C55D70088EF76 /* positon.png */,
 				43519846239458FD00C487E1 /* menuSliderBtn.png */,
 				43519845239458FA00C487E1 /* menuSliderBtn@2x.png */,
 				435198472394590400C487E1 /* menuSliderBtn@3x.png */,
-				43D65B4B235EA67A00E391DE /* CRWDLOGO@3x.png */,
 				4372DB5E230F168A00972AB8 /* Splash Screen – delete this bruh@3x.png */,
 				4372DB66230F16BD00972AB8 /* I WOULD LIKE TO CHANGE MY MIND@2x.png */,
 				4372DB6A230F16EF00972AB8 /* button1.png */,
@@ -260,28 +336,12 @@
 				432A3E9B233C55C4006A96F0 /* images-2.png */,
 				432A3E9C233C55C4006A96F0 /* images-3.png */,
 				432A3E9E233C55C4006A96F0 /* images.jpeg */,
-				4312202D2351FA2100E6CE8D /* profileMenu.png */,
-				4312202C2351FA2100E6CE8D /* profileMenu@2x.png */,
-				4312202E2351FA2200E6CE8D /* profileMenu@3x.png */,
-				4312201B2351F3BC00E6CE8D /* positon.png */,
-				431220212351F8C600E6CE8D /* slidehandleBar.png */,
-				431220202351F8C600E6CE8D /* slidehandleBar@2x.png */,
-				431220252351F8C600E6CE8D /* slidehandleBar@3x.png */,
-				431220242351F8C600E6CE8D /* slidupbar.png */,
-				431220222351F8C600E6CE8D /* slidupbar@2x.png */,
-				431220232351F8C600E6CE8D /* slidupbar@3x.png */,
-				4312201C2351F3BC00E6CE8D /* positon@2x.png */,
-				4312201A2351F3BC00E6CE8D /* positon@3x.png */,
 				432A3E9D233C55C4006A96F0 /* images.png */,
-				431220142351F17A00E6CE8D /* camera.png */,
-				431220152351F17B00E6CE8D /* camera@2x.png */,
-				431220162351F17B00E6CE8D /* camera@3x.png */,
 				4372DB6B230F16EF00972AB8 /* button DENY .png */,
 				4372DB7E230F188F00972AB8 /* Splash Screen – 7@2x.png */,
 				4372DB7A230F176000972AB8 /* Rectangle 46@3x.png */,
 				4372DB72230F172000972AB8 /* CRWND WILL LIKE TO ACCESS YOU LOCATION@2x.png */,
 				4372DB62230F16B600972AB8 /* CRWDN NEEDS YOUR LOCATION TO BE A FUNCTIONAL APP@2x.png */,
-				43354EDF2342EC12002AFCB7 /* GMapController.swift */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -489,45 +549,66 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				593A4CDC239C568D0088EF76 /* CRWDLOGO.png in Resources */,
+				593A4CEE239C568D0088EF76 /* images.jpeg in Resources */,
 				4372DB5B230F166C00972AB8 /* Main.storyboard in Resources */,
 				4372DB37230F162C00972AB8 /* LaunchScreen.storyboard in Resources */,
-				431220192351F17B00E6CE8D /* camera@3x.png in Resources */,
 				4372DB872310BA6100972AB8 /* Symbol @3x.png in Resources */,
-				431220292351F8C700E6CE8D /* slidupbar@3x.png in Resources */,
+				593A4CFA239C568D0088EF76 /* images-3.png in Resources */,
+				593A4CDB239C568D0088EF76 /* profileMenu@3x.png in Resources */,
+				593A4CD8239C568D0088EF76 /* button DENY .png in Resources */,
 				432A3EA1233C55C4006A96F0 /* images.png in Resources */,
 				4372DB77230F174400972AB8 /* DENY button@3x.png in Resources */,
-				4312201D2351F3BC00E6CE8D /* positon@3x.png in Resources */,
 				435198492394590500C487E1 /* menuSliderBtn.png in Resources */,
-				431220302351FA2200E6CE8D /* profileMenu.png in Resources */,
-				4312201F2351F3BC00E6CE8D /* positon@2x.png in Resources */,
 				4372DB7B230F176000972AB8 /* Rectangle 46@3x.png in Resources */,
-				431220282351F8C700E6CE8D /* slidupbar@2x.png in Resources */,
-				4312202A2351F8C700E6CE8D /* slidupbar.png in Resources */,
+				593A4CE0239C568D0088EF76 /* I WOULD LIKE TO CHANGE MY MIND@2x.png in Resources */,
+				593A4CEC239C568D0088EF76 /* button1.png in Resources */,
+				593A4CF7239C568D0088EF76 /* menuSliderBtn@2x.png in Resources */,
+				593A4CDA239C568D0088EF76 /* slidupbar.png in Resources */,
+				593A4CE6239C568D0088EF76 /* positon.png in Resources */,
+				593A4CDF239C568D0088EF76 /* camera@2x.png in Resources */,
 				432A3EA2233C55C4006A96F0 /* images.jpeg in Resources */,
+				593A4CDE239C568D0088EF76 /* camera@3x.png in Resources */,
+				593A4CEA239C568D0088EF76 /* Group 25@2x.png in Resources */,
+				593A4CE3239C568D0088EF76 /* CRWND WILL LIKE TO ACCESS YOU LOCATION@2x.png in Resources */,
 				43DD1E142375747F00822948 /* GoogleService-Info.plist in Resources */,
 				4351984A2394590500C487E1 /* menuSliderBtn@3x.png in Resources */,
 				43D65B4A235E8B9A00E391DE /* CollectionViewCell.xib in Resources */,
+				593A4CE1239C568D0088EF76 /* menuSliderBtn@3x.png in Resources */,
+				593A4CDD239C568D0088EF76 /* slidupbar@2x.png in Resources */,
+				593A4CE2239C568D0088EF76 /* slidupbar@3x.png in Resources */,
+				593A4CD7239C568D0088EF76 /* slidehandleBar.png in Resources */,
+				593A4CF9239C568D0088EF76 /* camera.png in Resources */,
+				593A4CF3239C568D0088EF76 /* images-2.png in Resources */,
+				593A4CF0239C568D0088EF76 /* positon@2x.png in Resources */,
 				4372DB63230F16B600972AB8 /* CRWDN NEEDS YOUR LOCATION TO BE A FUNCTIONAL APP@2x.png in Resources */,
-				4312201E2351F3BC00E6CE8D /* positon.png in Resources */,
+				593A4CD9239C568D0088EF76 /* menuSliderBtn.png in Resources */,
+				593A4CF2239C568D0088EF76 /* Splash Screen – 7@2x.png in Resources */,
+				593A4CE4239C568D0088EF76 /* Group 25@3x.png in Resources */,
+				593A4CEB239C568D0088EF76 /* profileMenu.png in Resources */,
+				593A4CE5239C568D0088EF76 /* DENY button@3x.png in Resources */,
 				4328015423511249004C5725 /* CardViewController.xib in Resources */,
-				431220262351F8C700E6CE8D /* slidehandleBar@2x.png in Resources */,
 				4372DB73230F172000972AB8 /* CRWND WILL LIKE TO ACCESS YOU LOCATION@2x.png in Resources */,
+				593A4CF4239C568D0088EF76 /* profileMenu@2x.png in Resources */,
+				593A4CD5239C568D0088EF76 /* positon@3x.png in Resources */,
+				593A4CF1239C568D0088EF76 /* Rectangle 46@3x.png in Resources */,
 				4372DB7F230F188F00972AB8 /* Splash Screen – 7@2x.png in Resources */,
-				431220182351F17B00E6CE8D /* camera@2x.png in Resources */,
+				593A4CEF239C568D0088EF76 /* CRWDN NEEDS YOUR LOCATION TO BE A FUNCTIONAL APP@2x.png in Resources */,
+				593A4CED239C568D0088EF76 /* Splash Screen – delete this bruh@3x.png in Resources */,
+				593A4CE7239C568D0088EF76 /* Symbol @3x.png in Resources */,
 				4372DB6C230F16EF00972AB8 /* button1.png in Resources */,
+				593A4CE8239C568D0088EF76 /* CRWDLOGO@3x.png in Resources */,
+				593A4CD6239C568D0088EF76 /* CRWDLOGO@2x.png in Resources */,
+				593A4CE9239C568D0088EF76 /* images.png in Resources */,
 				4372DB34230F162C00972AB8 /* Assets.xcassets in Resources */,
-				43D65B4F235EA67B00E391DE /* CRWDLOGO.png in Resources */,
-				431220312351FA2200E6CE8D /* profileMenu@3x.png in Resources */,
-				43D65B50235EA67B00E391DE /* CRWDLOGO@2x.png in Resources */,
 				4372DB67230F16BE00972AB8 /* I WOULD LIKE TO CHANGE MY MIND@2x.png in Resources */,
-				43D65B4E235EA67B00E391DE /* CRWDLOGO@3x.png in Resources */,
-				4312202B2351F8C700E6CE8D /* slidehandleBar@3x.png in Resources */,
+				593A4CAE239C55D70088EF76 /* positon.png in Resources */,
 				4372DB5F230F168A00972AB8 /* Splash Screen – delete this bruh@3x.png in Resources */,
+				593A4CF8239C568D0088EF76 /* slidehandleBar@3x.png in Resources */,
 				435198482394590500C487E1 /* menuSliderBtn@2x.png in Resources */,
 				432A3EA0233C55C4006A96F0 /* images-3.png in Resources */,
-				4312202F2351FA2200E6CE8D /* profileMenu@2x.png in Resources */,
-				431220172351F17B00E6CE8D /* camera.png in Resources */,
-				431220272351F8C700E6CE8D /* slidehandleBar.png in Resources */,
+				593A4CF6239C568D0088EF76 /* slidehandleBar@2x.png in Resources */,
+				593A4CF5239C568D0088EF76 /* Group 25.png in Resources */,
 				432A3E9F233C55C4006A96F0 /* images-2.png in Resources */,
 				4372DB6F230F16EF00972AB8 /* button DENY .png in Resources */,
 			);
@@ -638,7 +719,6 @@
 				4351984C23945A1500C487E1 /* menuBackgroundView .swift in Sources */,
 				430D2D38231DFF1C005510A2 /* CameraViewController.swift in Sources */,
 				43D65B49235E8B9A00E391DE /* CollectionViewCell.swift in Sources */,
-				43354EE02342EC12002AFCB7 /* GMapController.swift in Sources */,
 				4372DB2A230F162B00972AB8 /* AppDelegate.swift in Sources */,
 				4396162D23680361001331FC /* SlideViewAnimations.swift in Sources */,
 				4396162F236803F3001331FC /* CollectionViewExtention.swift in Sources */,
