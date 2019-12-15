@@ -83,6 +83,7 @@ import MapKit
 import CoreLocation
 import Parse
 import AVFoundation
+import RadarSDK
 
 class ViewController: UIViewController , UIGestureRecognizerDelegate {
     
@@ -113,6 +114,9 @@ class ViewController: UIViewController , UIGestureRecognizerDelegate {
     let cardHeight :CGFloat = 285
     let cardhandleAreaHeight :CGFloat = 60
     var cardVisible = false
+    var userLattidude : Double =  0
+    var userLongitude :Double = 0
+    var firstUpdate  = false
     var nextState :cardState{
         return cardVisible ? .collapsed : .expanded
     }
@@ -128,6 +132,7 @@ class ViewController: UIViewController , UIGestureRecognizerDelegate {
     @IBOutlet weak var animatedLabel: UIButton!
     
     
+    @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var animatedStack: UIStackView!
     @IBOutlet weak var topCrowds: UILabel!
     @IBOutlet weak var viewAdd: UIView!
@@ -154,43 +159,35 @@ class ViewController: UIViewController , UIGestureRecognizerDelegate {
     //MARK:- handling views
     
     override func viewDidLoad() {
+        
+        firstUpdate = true 
         super.viewDidLoad()
-        
-//        let locationSearchTable = storyboard!.instantiateViewController(withIdentifier: "LocationSearchTable") as! LocationSearchTable
-//        resultSearchController = UISearchController(searchResultsController: locationSearchTable)
-//        resultSearchController.searchResultsUpdater = locationSearchTable
-//        let searchBar = resultSearchController!.searchBar
-//        searchBar.sizeToFit()
-//        searchBar.placeholder = "Search for places"
-//        navigationItem.titleView = resultSearchController?.searchBar
-//        resultSearchController.hidesNavigationBarDuringPresentation = false
-//        resultSearchController.dimsBackgroundDuringPresentation = true
-//        definesPresentationContext = true
-//        locationSearchTable.mapView = mapView
-//        locationSearchTable.handleMapSearchDelegate = self
-//
-        
-        
-        
-        
-        //setupCollectionVew()
-        //setupAnotations()
+        searchTextField.delegate = self
         setupGesture()
         setUpCard()
         checkLocationServices()
-        //searchAndStatusView.layer.borderColor = UIColor.red.cgColor
-        //searchAndStatusView.layer.cornerRadius = 15
+        
+        
+        
         
         self.collectionView.register(UINib(nibName:"CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: cellIdentifier)
-        let userLattidude =  (locationManager.location?.coordinate.latitude)!
-        let userLongitude = (locationManager.location?.coordinate.longitude)!
-        populate(currentlattitude: userLattidude, currentLongitude: userLongitude)
         
-        //        let catPictureURL = "https://image.blockbusterbd.net/00416_main_image_04072019225805.png"
-        //        let catImage = DownloadImage(imageURL: catPictureURL)
-        //
-        //        exampleImageView.image = catImage
-        //
+      
+        
+    }
+    
+    
+    
+    
+    
+    
+    func setUpRader(){
+        
+        let trackingOptions = RadarTrackingOptions()
+        trackingOptions.priority = .responsiveness // use .efficiency instead to reduce location update frequency
+        trackingOptions.offline = .replayStopped // use .replayOff instead to disable offline replay
+        trackingOptions.sync = .possibleStateChanges // use .all instead to sync all location updates
+        Radar.startTracking(trackingOptions: trackingOptions)
         
     }
     
@@ -301,13 +298,14 @@ class ViewController: UIViewController , UIGestureRecognizerDelegate {
             locationManager.startUpdatingLocation()
             break
         case .denied:
-            locationManager.requestWhenInUseAuthorization()
-            locationManager.startUpdatingLocation()
+           
             // Show alert instructing them how to turn on permissions
             break
         case .notDetermined:
             //print("yup")
             locationManager.requestWhenInUseAuthorization()
+            locationManager.requestAlwaysAuthorization()
+             locationManager.startUpdatingLocation()
         case .restricted:
             // Show an alert letting them know what's up
             break
@@ -324,7 +322,7 @@ class ViewController: UIViewController , UIGestureRecognizerDelegate {
     func populate(currentlattitude : Double , currentLongitude : Double){
         
         let parseGeoPoint = PFGeoPoint(latitude: currentlattitude, longitude: currentLongitude)
-        let query = PFQuery(className: "Crowds")
+        let query = PFQuery(className: Constants.CParse.Crwds)
         query.whereKey("location", nearGeoPoint: parseGeoPoint)
         query.limit = displayLimit
         query.findObjectsInBackground { (objects, error) in
@@ -346,7 +344,8 @@ class ViewController: UIViewController , UIGestureRecognizerDelegate {
                             let distanceFromCurrentLocationInMiles = (userLocation?.distance(from: objectLoctaionInCllocation))! / 1609.344
                             
                             let objectNameOfPlace = object.object(forKey: "RadarName") as! String
-                            let imageid = object.object(forKey: "PlaceID") as! String// string will be changed later
+                            let imageid = object.object(forKey: "PlaceID") as! String
+                            // string will be changed later
                             let singleItem = Crwds(lattitude: objectLattiude, longitude: objectLongitude)
                             singleItem.SetNameOfPlace(name: objectNameOfPlace)
                             singleItem.distanceFromCurrentLocation = "\(Int(distanceFromCurrentLocationInMiles)) m"
@@ -426,6 +425,29 @@ class ViewController: UIViewController , UIGestureRecognizerDelegate {
         
         
         return finalImage
+    }
+    
+    func showTableView(shouldShow : Bool){
+        if shouldShow{
+            UIView.animate(withDuration: 0.3) {
+                self.tableView.frame = CGRect(x: 20, y: 170, width: self.view.frame.width - 40 , height: self.view.frame.height - 170)
+                
+            }
+        }else{
+            
+            UIView.animate(withDuration: 0.3, animations: {
+                 self.tableView.frame = CGRect(x: 20, y: 170, width: self.view.frame.width - 40 , height: self.view.frame.height - 170)
+            }) { (finished) in
+                for subview in self.view.subviews{
+                    if subview.tag == 18 {
+                        subview.removeFromSuperview()
+                    }
+                }
+            }
+            
+            
+        }
+        
     }
     
     
@@ -539,34 +561,41 @@ class ViewController: UIViewController , UIGestureRecognizerDelegate {
     
 }
 
-//extension ViewController : UITextFieldDelegate {
-//    // comment this whole extention to silence the warning ; testing something here ; do not change the code here
-//    func textFieldDidBeginEditing(_ textField: UITextField) {
-//        tableView.frame = CGRect(x: 20, y: view.frame.height, width: view.frame.width - 40 , height: view.frame.height - 170)
-//        tableView.layer.cornerRadius = 5
-//        tableView.register(UITableViewCell, forCellReuseIdentifier: "locationcell")
-//        tableView.dataSource = self
-//        tableView.delegate = self
-//        tableView.tag = 18
-//        // the eroors are due to not setting the tableview delegate methods
-//        // the tableview variables is on the variable place
-//
-//    }
-//
-//    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-//        <#code#>
-//    }
-//    func textFieldDidEndEditing(_ textField: UITextField) {
-//        <#code#>
-//    }
-//
-//    func textFieldShouldClear(_ textField: UITextField) -> Bool {
-//        <#code#>
-//    }
-//
-//
-//
-//}
+extension ViewController : UITextFieldDelegate {
+    // comment this whole extention to silence the warning ; testing something here ; do not change the code here
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        if textField == searchTextField{
+            tableView.frame = CGRect(x: 20, y: view.frame.height, width: view.frame.width - 40 , height: view.frame.height - 170)
+                   tableView.layer.cornerRadius = 5
+                   tableView.register(UITableViewCell.self, forCellReuseIdentifier: "locationcell")
+                   tableView.dataSource = self
+                   tableView.delegate = self
+                   tableView.tag = 18
+                   tableView.rowHeight = 60
+                   view.addSubview(tableView)
+            showTableView(shouldShow: true)
+            
+        }
+        
+       
+       
+
+    }
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        return true
+    }
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        
+    }
+
+    func textFieldShouldClear(_ textField: UITextField) -> Bool {
+        return true
+    }
+
+
+
+}
 
 
 extension ViewController: HandleMapSearch {
@@ -592,6 +621,30 @@ extension ViewController: HandleMapSearch {
     }
     
 }
+
+extension ViewController : UITableViewDelegate , UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath.row)
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    
+}
+
+
+
+
 
 
 

@@ -8,6 +8,7 @@ target 'CrwdnApplication' do
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
   pod 'Firebase/Core'
+  pod 'RadarSDK'
 
 
 # https://firebase.google.com/docs/ios/setup#available-pods

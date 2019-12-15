@@ -171,6 +171,7 @@
                         <outlet property="gestureView" destination="AMK-4v-M4L" id="eIb-5a-MAX"/>
                         <outlet property="mapView" destination="kjH-sO-f5W" id="qoL-J3-35e"/>
                         <outlet property="positionOutlet" destination="xHc-ff-8DT" id="fWM-IQ-snY"/>
+                        <outlet property="searchTextField" destination="MWB-gU-LDR" id="KOq-DW-KNc"/>
                         <outlet property="topCrowds" destination="Kem-g8-njE" id="2kt-qf-wgJ"/>
                         <outlet property="viewAdd" destination="2l8-rn-5f3" id="W29-bd-Jqe"/>
                     </connections>

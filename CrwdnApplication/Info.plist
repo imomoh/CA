@@ -39,6 +39,10 @@
 	<string>we need to save photos </string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>we need tom use your photos </string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>fetch</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
